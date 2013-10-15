@@ -1,58 +1,62 @@
-Boat name,Div,Race,Details,Elapsed time,Seconds,TCF,PHRF,IRC
-The Guarantee,1,Spring r1,id1 Spring r1 28 Sep,2:25:04,8704.0,0.848,0.845,
-Revs,1,Spring r1,id1 Spring r1 28 Sep,2:20:08,8408.0,0.894,0.885,1.234
-Whistler III,2,Spring r1,id1 Spring r1 28 Sep,2:28:17,8897.0,0.7190000000000001,0.725,0.95
-Incantare,2,Spring r1,id1 Spring r1 28 Sep,2:34:37,9277.0,0.6970000000000001,0.725,
-Airship,2,Spring r1,id1 Spring r1 28 Sep,2:25:28,8728.0,0.743,0.735,
-WiseGuy,2,Spring r1,id1 Spring r1 28 Sep,2:41:37,9697.0,0.706,,
-Wellington Spirit Bronze,2,Spring r1,id1 Spring r1 28 Sep,2:31:01,9061.0,0.77,0.79,
-Wellington Spirit Red,2,Spring r1,id1 Spring r1 28 Sep,2:34:37,9277.0,0.77,0.79,
-Gucci,2,Spring r1,id1 Spring r1 28 Sep,2:38:16,9496.0,0.762,0.755,0.963
-Cantilena,3,Spring r1,id1 Spring r1 28 Sep,2:03:17,7397.0,0.633,,
-Titus Canby,3,Spring r1,id1 Spring r1 28 Sep,2:02:45,7365.0,0.6890000000000001,0.69,
-Saucy Sausage,3,Spring r1,id1 Spring r1 28 Sep,2:15:56,8156.0,0.629,0.63,
-Marangi,3,Spring r1,id1 Spring r1 28 Sep,<no entry>,,,,
-Drinks Trolley,1,Spring r2,id2 Spring r2 5 Oct,23:56,1436.0,0.8240000000000001,0.84,
-Wedgetail,1,Spring r2,id2 Spring r2 5 Oct,21:09,1269.0,0.945,0.95,1.209
-Revs,1,Spring r2,id2 Spring r2 5 Oct,22:26,1346.0,0.894,0.885,1.234
-Magic Trick,1,Spring r2,id2 Spring r2 5 Oct,22:48,1368.0,0.8909999999999999,0.875,
-Nedax Racing,1,Spring r2,id2 Spring r2 5 Oct,24:45,1485.0,0.8320000000000001,0.84,
-Rocket Science,1,Spring r2,id2 Spring r2 5 Oct,25:28,1528.0,0.83,0.82,
-The Guarantee,1,Spring r2,id2 Spring r2 5 Oct,24:59,1499.0,0.848,0.845,
-Blink,1,Spring r2,id2 Spring r2 5 Oct,23:05,1385.0,0.95,0.98,
-Blue Magic,2,Spring r2,id2 Spring r2 5 Oct,26:50,1610.0,0.7390000000000001,0.735,0.955
-Incantare,2,Spring r2,id2 Spring r2 5 Oct,28:17,1697.0,0.708,0.725,
-Whistler III,2,Spring r2,id2 Spring r2 5 Oct,27:28,1648.0,0.73,0.725,0.95
-WiseGuy,2,Spring r2,id2 Spring r2 5 Oct,29:14,1754.0,0.706,,
-Wellington Spirit Red,2,Spring r2,id2 Spring r2 5 Oct,27:33,1653.0,0.758,0.79,
-Airship,2,Spring r2,id2 Spring r2 5 Oct,27:49,1669.0,0.754,0.735,
-Gucci,2,Spring r2,id2 Spring r2 5 Oct,28:24,1704.0,0.75,0.755,0.963
-Floating Free,2,Spring r2,id2 Spring r2 5 Oct,30:21,1821.0,0.705,,
-Wellington Spirit Bronze,2,Spring r2,id2 Spring r2 5 Oct,28:14,1694.0,0.763,0.79,
-Prime Mover,2,Spring r2,id2 Spring r2 5 Oct,28:50,1730.0,0.7609999999999999,0.765,
-Eat My Shorts,2,Spring r2,id2 Spring r2 5 Oct,30:05,1805.0,0.742,0.745,
-Montego Bay III,2,Spring r2,id2 Spring r2 5 Oct,34:27,2067.0,0.7190000000000001,0.745,
-Titus Canby,3,Spring r2,id2 Spring r2 5 Oct,3:33:39,12819.0,0.6890000000000001,0.69,
-Revenue Cutter,3,Spring r2,id2 Spring r2 5 Oct,3:55:08,14108.0,0.63,,
-Saucy Sausage,3,Spring r2,id2 Spring r2 5 Oct,3:56:48,14208.0,0.626,0.63,
-Haumuri,3,Spring r2,id2 Spring r2 5 Oct,3:42:36,13356.0,0.6779999999999999,0.665,
-White Cavalier,3,Spring r2,id2 Spring r2 5 Oct,< dnf >,,,,
-Blink,1,Spring r3,id3 Spring r3 5 Oct,2:03:09,7389,0.95,0.98,
-Revs,1,Spring r3,id3 Spring r3 5 Oct,2:11:36,7896,0.894,0.885,1.234
-Drinks Trolley,1,Spring r3,id3 Spring r3 5 Oct,2:25:46,8746,0.8240000000000001,0.84,
-Nedax Racing,1,Spring r3,id3 Spring r3 5 Oct,2:24:24,8664,0.8320000000000001,0.84,
-Rocket Science,1,Spring r3,id3 Spring r3 5 Oct,2:25:00,8700,0.83,0.82,
-Magic Trick,1,Spring r3,id3 Spring r3 5 Oct,2:16:14,8174,0.8909999999999999,0.875,
-Wedgetail,1,Spring r3,id3 Spring r3 5 Oct,2:09:28,7768,0.945,0.95,1.209
-The Guarantee,1,Spring r3,id3 Spring r3 5 Oct,2:26:02,8762,0.848,0.845,
-WiseGuy,2,Spring r3,id3 Spring r3 5 Oct,2:17:03,8223,0.706,,
-Wellington Spirit Red,2,Spring r3,id3 Spring r3 5 Oct,2:14:40,8080,0.758,0.79,
-Blue Magic,2,Spring r3,id3 Spring r3 5 Oct,2:18:14,8294,0.7390000000000001,0.735,0.955
-Gucci,2,Spring r3,id3 Spring r3 5 Oct,2:18:44,8324,0.75,0.755,0.963
-Eat My Shorts,2,Spring r3,id3 Spring r3 5 Oct,2:21:01,8461,0.742,0.745,
-Airship,2,Spring r3,id3 Spring r3 5 Oct,2:18:56,8336,0.754,0.735,
-Incantare,2,Spring r3,id3 Spring r3 5 Oct,2:28:57,8937,0.708,0.725,
-Prime Mover,2,Spring r3,id3 Spring r3 5 Oct,2:20:16,8416,0.7609999999999999,0.765,
-Whistler III,2,Spring r3,id3 Spring r3 5 Oct,2:26:31,8791,0.73,0.725,0.95
-Wellington Spirit Bronze,2,Spring r3,id3 Spring r3 5 Oct,2:21:01,8461,0.763,0.79,
-Montego Bay III,2,Spring r3,id3 Spring r3 5 Oct,2:34:37,9277,0.7190000000000001,0.745,
+Boat name,Div,Race,Details,Elapsed time,secsET,secsCor,refTime,TCF,TCFst,pctMvmt,TCFclmp,PHRF,IRC
+The Guarantee,1,Spring r1,id1 Spring r1 28 Sep,2:25:04,8704.0,7380.0,7380.0,0.848,0.848,0.0,0.848,0.845,
+Revs,1,Spring r1,id1 Spring r1 28 Sep,2:20:08,8408.0,7516.0,7380.0,0.894,0.878,-1.79,0.878,0.885,1.234
+Whistler III,2,Spring r1,id1 Spring r1 28 Sep,2:28:17,8897.0,6396.0,6846.0,0.7190000000000001,0.77,7.09,0.741,0.725,0.95
+Incantare,2,Spring r1,id1 Spring r1 28 Sep,2:34:37,9277.0,6466.0,6846.0,0.6970000000000001,0.738,5.88,0.718,0.725,
+Airship,2,Spring r1,id1 Spring r1 28 Sep,2:25:28,8728.0,6484.0,6846.0,0.743,0.784,5.52,0.765,0.735,
+WiseGuy,2,Spring r1,id1 Spring r1 28 Sep,2:41:37,9697.0,6846.0,6846.0,0.706,0.706,0.0,0.706,,
+Wellington Spirit Bronze,2,Spring r1,id1 Spring r1 28 Sep,2:31:01,9061.0,6976.0,6846.0,0.77,0.756,-1.82,0.756,0.79,
+Wellington Spirit Red,2,Spring r1,id1 Spring r1 28 Sep,2:34:37,9277.0,7143.0,6846.0,0.77,0.738,-4.16,0.747,0.79,
+Gucci,2,Spring r1,id1 Spring r1 28 Sep,2:38:16,9496.0,7235.0,6846.0,0.762,0.721,-5.38,0.739,0.755,0.963
+Cantilena,3,Spring r1,id1 Spring r1 28 Sep,2:03:17,7397.0,4682.0,5074.0,0.633,0.686,8.37,0.652,,
+Titus Canby,3,Spring r1,id1 Spring r1 28 Sep,2:02:45,7365.0,5074.0,5074.0,0.6890000000000001,0.689,-0.0,0.6890000000000001,0.69,
+Saucy Sausage,3,Spring r1,id1 Spring r1 28 Sep,2:15:56,8156.0,5130.0,5074.0,0.629,0.622,-1.11,0.622,0.63,
+Marangi,3,Spring r1,id1 Spring r1 28 Sep,<no entry>,,,5074.0,,,,,,
+Drinks Trolley,1,Spring r2,id2 Spring r2 5 Oct,23:56,1436.0,1183.0,1218.0,0.8240000000000001,0.848,2.91,0.848,0.84,
+Wedgetail,1,Spring r2,id2 Spring r2 5 Oct,21:09,1269.0,1199.0,1218.0,0.945,0.96,1.59,0.96,0.95,1.209
+Revs,1,Spring r2,id2 Spring r2 5 Oct,22:26,1346.0,1203.0,1218.0,0.894,0.905,1.23,0.905,0.885,1.234
+Magic Trick,1,Spring r2,id2 Spring r2 5 Oct,22:48,1368.0,1218.0,1218.0,0.8909999999999999,0.891,0.0,0.8909999999999999,0.875,
+Nedax Racing,1,Spring r2,id2 Spring r2 5 Oct,24:45,1485.0,1235.0,1218.0,0.8320000000000001,0.821,-1.32,0.821,0.84,
+Rocket Science,1,Spring r2,id2 Spring r2 5 Oct,25:28,1528.0,1268.0,1218.0,0.83,0.797,-3.98,0.805,0.82,
+The Guarantee,1,Spring r2,id2 Spring r2 5 Oct,24:59,1499.0,1271.0,1218.0,0.848,0.813,-4.13,0.823,0.845,
+Blink,1,Spring r2,id2 Spring r2 5 Oct,23:05,1385.0,1315.0,1218.0,0.95,0.88,-7.37,0.921,0.98,
+Blue Magic,2,Spring r2,id2 Spring r2 5 Oct,26:50,1610.0,1189.0,1258.0,0.7390000000000001,0.782,5.82,0.761,0.735,0.955
+Incantare,2,Spring r2,id2 Spring r2 5 Oct,28:17,1697.0,1201.0,1258.0,0.708,0.742,4.8,0.729,0.725,
+Whistler III,2,Spring r2,id2 Spring r2 5 Oct,27:28,1648.0,1203.0,1258.0,0.73,0.763,4.52,0.752,0.725,0.95
+WiseGuy,2,Spring r2,id2 Spring r2 5 Oct,29:14,1754.0,1238.0,1258.0,0.706,0.717,1.56,0.717,,
+Wellington Spirit Red,2,Spring r2,id2 Spring r2 5 Oct,27:33,1653.0,1252.0,1258.0,0.758,0.762,0.53,0.762,0.79,
+Airship,2,Spring r2,id2 Spring r2 5 Oct,27:49,1669.0,1258.0,1258.0,0.754,0.754,0.0,0.754,0.735,
+Gucci,2,Spring r2,id2 Spring r2 5 Oct,28:24,1704.0,1278.0,1258.0,0.75,0.738,-1.6,0.738,0.755,0.963
+Floating Free,2,Spring r2,id2 Spring r2 5 Oct,30:21,1821.0,1283.0,1258.0,0.705,0.691,-1.99,0.691,,
+Wellington Spirit Bronze,2,Spring r2,id2 Spring r2 5 Oct,28:14,1694.0,1292.0,1258.0,0.763,0.743,-2.62,0.743,0.79,
+Prime Mover,2,Spring r2,id2 Spring r2 5 Oct,28:50,1730.0,1316.0,1258.0,0.7609999999999999,0.727,-4.47,0.738,0.765,
+Eat My Shorts,2,Spring r2,id2 Spring r2 5 Oct,30:05,1805.0,1339.0,1258.0,0.742,0.697,-6.06,0.72,0.745,
+Montego Bay III,2,Spring r2,id2 Spring r2 5 Oct,34:27,2067.0,1486.0,1258.0,0.7190000000000001,0.609,-15.3,0.697,0.745,
+Titus Canby,3,Spring r2,id2 Spring r2 5 Oct,3:33:39,12819.0,8832.0,8888.0,0.6890000000000001,0.693,0.58,0.693,0.69,
+Revenue Cutter,3,Spring r2,id2 Spring r2 5 Oct,3:55:08,14108.0,8888.0,8888.0,0.63,0.63,0.0,0.63,,
+Saucy Sausage,3,Spring r2,id2 Spring r2 5 Oct,3:56:48,14208.0,8894.0,8888.0,0.626,0.626,0.0,0.626,0.63,
+Haumuri,3,Spring r2,id2 Spring r2 5 Oct,3:42:36,13356.0,9055.0,8888.0,0.6779999999999999,0.665,-1.92,0.665,0.665,
+White Cavalier,3,Spring r2,id2 Spring r2 5 Oct,< dnf >,,,8888.0,,,,,,
+Lizzie,Classics,Spring r2,id2 Spring r2 5 Oct,3:03:29,11009.0,4403.0,5449.0,0.4,0.495,23.75,0.412,,
+Rona,Classics,Spring r2,id2 Spring r2 5 Oct,2:36:36,9396.0,5449.0,5449.0,0.58,0.58,0.0,0.58,,
+Loloma,Classics,Spring r2,id2 Spring r2 5 Oct,3:14:21,11661.0,5713.0,5449.0,0.49,0.467,-4.69,0.475,,
+Blink,1,Spring r3,id3 Spring r3 5 Oct,2:03:09,7389,7019,7208.0,0.95,0.976,2.74,0.976,0.98,
+Revs,1,Spring r3,id3 Spring r3 5 Oct,2:11:36,7896,7059,7208.0,0.894,0.913,2.13,0.913,0.885,1.234
+Drinks Trolley,1,Spring r3,id3 Spring r3 5 Oct,2:25:46,8746,7206,7208.0,0.8240000000000001,0.824,-0.0,0.824,0.84,
+Nedax Racing,1,Spring r3,id3 Spring r3 5 Oct,2:24:24,8664,7208,7208.0,0.8320000000000001,0.832,-0.0,0.8320000000000001,0.84,
+Rocket Science,1,Spring r3,id3 Spring r3 5 Oct,2:25:00,8700,7221,7208.0,0.83,0.829,-0.12,0.829,0.82,
+Magic Trick,1,Spring r3,id3 Spring r3 5 Oct,2:16:14,8174,7283,7208.0,0.8909999999999999,0.882,-1.01,0.882,0.875,
+Wedgetail,1,Spring r3,id3 Spring r3 5 Oct,2:09:28,7768,7340,7208.0,0.945,0.928,-1.8,0.928,0.95,1.209
+The Guarantee,1,Spring r3,id3 Spring r3 5 Oct,2:26:02,8762,7430,7208.0,0.848,0.823,-2.95,0.823,0.845,
+WiseGuy,2,Spring r3,id3 Spring r3 5 Oct,2:17:03,8223,5805,6285.0,0.706,0.764,8.22,0.727,,
+Wellington Spirit Red,2,Spring r3,id3 Spring r3 5 Oct,2:14:40,8080,6124,6285.0,0.758,0.778,2.64,0.778,0.79,
+Blue Magic,2,Spring r3,id3 Spring r3 5 Oct,2:18:14,8294,6129,6285.0,0.7390000000000001,0.758,2.57,0.758,0.735,0.955
+Gucci,2,Spring r3,id3 Spring r3 5 Oct,2:18:44,8324,6243,6285.0,0.75,0.755,0.67,0.755,0.755,0.963
+Eat My Shorts,2,Spring r3,id3 Spring r3 5 Oct,2:21:01,8461,6278,6285.0,0.742,0.743,0.13,0.743,0.745,
+Airship,2,Spring r3,id3 Spring r3 5 Oct,2:18:56,8336,6285,6285.0,0.754,0.754,0.0,0.754,0.735,
+Incantare,2,Spring r3,id3 Spring r3 5 Oct,2:28:57,8937,6327,6285.0,0.708,0.703,-0.71,0.703,0.725,
+Prime Mover,2,Spring r3,id3 Spring r3 5 Oct,2:20:16,8416,6404,6285.0,0.7609999999999999,0.747,-1.84,0.747,0.765,
+Whistler III,2,Spring r3,id3 Spring r3 5 Oct,2:26:31,8791,6417,6285.0,0.73,0.715,-2.05,0.715,0.725,0.95
+Wellington Spirit Bronze,2,Spring r3,id3 Spring r3 5 Oct,2:21:01,8461,6455,6285.0,0.763,0.743,-2.62,0.743,0.79,
+Montego Bay III,2,Spring r3,id3 Spring r3 5 Oct,2:34:37,9277,6670,6285.0,0.7190000000000001,0.677,-5.84,0.697,0.745,
+St Laurence,Open,Spring r3,id3 Spring r3 5 Oct,2:08:27,7707,8092,8092.0,1.05,1.05,0.0,1.05,,
