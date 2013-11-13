@@ -34,13 +34,6 @@ def et2seconds(x):
             return seconds + minutes*60
 
 
-# Compute corrected seconds
-def secsCor(x):
-    if '<' in x['Elapsed time']:
-        return np.nan
-    else:
-        return int(x['TCF'] * x['secsET'])
-
 # Extract division from Stuff field
 def get_division(x):
     if 'Division' in x:
@@ -53,13 +46,21 @@ def get_division(x):
                 return x.split(', start')[0]
             else:
                 return 'Combined'
-
             
+
+# Compute corrected seconds
+def corrSecs(x):
+    if '<' in x['Elapsed time']:
+        return np.nan
+    else:
+        return int(x['TCF'] * x['ETsecs'])
+
+
 # Determine the reference boat and time as per Yotsys, i.e. boat with median corrected time or nearest boat
 # quicker than the median corrected time
 def ref_boat(df):
-    x = df.secsCor.dropna()                   # x is a series formed by extracting the secsCor column from df
-    x.sort()                                  # Ensure series x is sorted in order of ascending corrected seconds, secsCor
+    x = df.corrSecs.dropna()                  # x is a series formed by extracting the corrSecs column from df
+    x.sort()                                  # Ensure series x is sorted in order of ascending corrected seconds, corrSecs
     m = x.median()                            # m is the median value from x  
     if (x==m).sum()==0:                       # (x==m) returns a boolean; the sum equals zero if no boat's time is the median
         refboat = x[x < m].tail(1).index[0]   # Let the last boat from those boats above the median be the reference boat
@@ -72,10 +73,10 @@ def ref_boat(df):
 
 # Compute the sailed-to handicap for this race
 def TCFst(x):
-    if x['secsCor'] == 'NaN':
+    if x['corrSecs'] == 'NaN':
         return np.nan
     else:
-        return round( (float(x['TCF']) * float(x['refTime']) / float(x['secsCor'])), 3)
+        return round( (float(x['TCF']) * float(x['refTime']) / float(x['corrSecs'])), 3)
 
 
 # Compute percentage movement in TCF, i.e. sailed to versus current TCF. Use my ST calc (TCFst) coz YotSys gets it wrong)    
@@ -90,16 +91,16 @@ def pctMvmt(x):
 def TCFclmp(x, loClamp = .03, upClamp = .03):
     #print x
     # case where boat is the reference boat or the boat was never scored
-    if (x['secsCor'] == x['refTime']) or (x['secsCor'] == 'Nan'):
+    if (x['corrSecs'] == x['refTime']) or (x['corrSecs'] == 'Nan'):
         return x['TCF']
     # case where boat is better than reference boat
-    if x['secsCor'] < x['refTime']:
+    if x['corrSecs'] < x['refTime']:
         if abs(x['TCFst'] - x['TCF']) / x['TCF'] > upClamp:
            return round(((1 + upClamp) * x['TCF']), 3)
         else:
            return x['TCFst']
     # case where boat is worse than reference boat
-    if x['secsCor'] > x['refTime']:
+    if x['corrSecs'] > x['refTime']:
         if abs(x['TCFst'] - x['TCF']) / x['TCF'] > loClamp:
            return round(((1 - loClamp) * x['TCF']), 3)
         else:
