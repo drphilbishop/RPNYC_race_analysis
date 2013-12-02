@@ -4,23 +4,26 @@ import math
 import datetime as dt
 import numpy as np
 
+
 # Compute TCFactual - what the TCF should have been on the day. It might be different to the TCF applied on the day.
 def TCFactual(df,indexKey=None,newTCFvalue=None): 
-    key = (df['Boat name'],indexKey)                                # Get the boat - handicap key
+    key = (df['Boat name'],indexKey)                                # Get the boat-handicap key
     if math.isnan(df['TCFapplied']) == False and '<' not in df['Elapsed time']:
-        if not newTCFvalue[key]:                                    # If newTCFvalue[key] is empty, this boat hasn't yet had a race for this handicap.
-            newTCFvalue[key].append(df['TCFapplied'])               # Append TCFapplied as TCFactual to newTCFvalue[key]
+        if not newTCFvalue[key]:                                    # If newTCFvalue[key] is empty, boat hasn't yet had a race for this handicap.
+            newTCFvalue[key].append(df['TCFapplied'])               # Append TCFapplied (as best candidate for TCFactual) to newTCFvalue[key]
         return round(newTCFvalue[key][len(newTCFvalue[key])-1], 3)  # Return the value of the last item, which will always be the newTCF for the next race
     else:
         return np.nan                                               # Return nan for TCFactual if boat didn't race this day     
 
- # Compute corrected seconds
+
+# Compute corrected seconds
 def corrSecs(df):    
     if '<' in df['Elapsed time'] or math.isnan(df['TCFactual']):
         return np.nan
     else:
         return int(df['TCFactual'] * df['ETsecs']) 
     
+
 # Determine the reference boat and time as per method E, i.e. boat with median
 # corrected time or nearest boat quicker than the median corrected time
 def ref_boat(df):
@@ -37,7 +40,7 @@ def ref_boat(df):
 #   return refboat, reftime
 
 
-# Adjust refTime
+# Set refTime to nan for boats that don't get a score
 def adjustRefTime(df):
     if math.isnan(df['ETsecs']):
         return np.nan
@@ -81,7 +84,8 @@ def TCFclmp(x, loClamp = .03, upClamp = .03):
             return x['TCFst']
 
 
-# Compute
+# Maintain the array of clamped TCFs and seeds - pick the last 4
+# items in the array at each TCF update
 def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,indexKey=None,TCFclampHistoryAndSeeds=None):
     key = (df['Boat name'],indexKey)               # Construct a key from boat name
     # If tcfClampHistoryAndSeeds[key] is empty (meaning hasnt raced before), add seeds. 
@@ -105,32 +109,35 @@ def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=No
     #numFinished is the minimum number of finishers required to finish a race
     #pctFinished is the percentage of boats in a fleet required to finish a race
     #numPastPerfs is the total number of values used in the newTCF calculation. Includes this races actualTCF and TCFclamp history of last 4 races, using seeds if less than 4 previous races exist
-    key = (df['Boat name'],indexKey)                      # Construct a key from boat name and handicap type
-    values=TCFclampHistoryAndSeeds[key]                   # Get list of seeds and previous TFCclamp values
+    key = (df['Boat name'],indexKey)                       # Construct a key from boat name and handicap type
+    values=TCFclampHistoryAndSeeds[key]                    # Get list of seeds and previous TFCclamp values
     percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
     # If there are 4 or more finishers in this race, compute the newTCF
     if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
-        numValuesUsed = min(len(values)+1,numPastPerfs+1)              # Get the number of seed and TCFclamp values to be used in the formula
-        fromIdx=max(0,len(values)-numPastPerfs)                      # Get the index to start summing from, will be either 0 or the len(values)-5 index depending which is larger
-        sumTCFclmps = sum(values[fromIdx:len(values)])  # Calculate sum of values fromIdx to len(values)-1 (we sum up to second to last because we do not include this race's TCFclmp)   
+        numValuesUsed = min(len(values)+1,numPastPerfs+1)  # Get the number of seed and TCFclamp values to be used in the formula
+        fromIdx=max(0,len(values)-numPastPerfs)            # Get the index to start summing from, will be either 0 or the len(values)-5 index depending which is larger
+        sumTCFclmps = sum(values[fromIdx:len(values)])     # Calculate sum of values fromIdx to len(values)-1 (we sum up to second to last because we do not include this race's TCFclmp)   
         newTCF = (sumTCFclmps + df['TCFactual'])/numValuesUsed # Calculate the newTCF. Here we add the TCFactual from this race to sumTCFclmps and divide by (numValuesUsed+1)    
-        newTCFvalue[key].append(newTCF)                   # Append newTCF to newTCFvalue dictionary        
-        #DEBUGGING
-        #print 'Boat and handicap', key, index
-        #print 'TCFapplied', df['TCFapplied']
-        #print 'TCFactual', df['TCFactual']
-        #print 'Seeds + TCFclamp history',values
-        #print 'Formula = average ( seeds clamps combination + TCFactual )',sumTCFclmps,'+',df['TCFactual'],'/',numValuesUsed+1
-        #print 'newTCF',round(newTCF,3)        
-        #print '----------------------------------------------'        
+        newTCFvalue[key].append(newTCF)                    # Append newTCF to newTCFvalue dictionary        
         return round(newTCF, 3)
-    else:                                                 # If less than 4 finishers in this race
-        return df['TCFactual']                            # newTCF remains the same the TCFactual    
+    else:                                                  # If less than 4 finishers in this race
+        return df['TCFactual']                             # newTCF remains the same the TCFactual    
 
-    
+
+# Compute difference between TCFapplied and TCFactual 
 def TCFdiff(df):
     if df['newTCF'] == 'NaN':
         return np.nan
     else:
         return round(float(df['TCFapplied'] - df['TCFactual']), 3)
-        
+
+
+# Compute difference in RankAppld and Rank
+def rankDiff(df):
+    if math.isnan(df['ETsecs']):
+        return np.nan
+    else:
+        if (df['RankAppld'] - df['Rank']) == 0:
+            return '-'
+        else:
+            return 'No'

@@ -1,6 +1,8 @@
-RPNYC - analysis of race results and TCF updates
+Analysis of race results and TCF updates
 ===================
 
-Analysis of handicapping and race results at RPNYC
+These python scripts analyse the updating of club handicaps at RPNYC and undertake
+analysis of race results.
 
-Very much a work in progress at the moment...
+This little project is very much a work in progress at the moment...
+
