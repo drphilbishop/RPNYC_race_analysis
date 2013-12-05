@@ -65,9 +65,9 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,RankAppld,TCFapplied
 12/10/2013,Championship,Spring,r4,1,Wedgetail,2:01:19,7279,3,0.945,0.95,1.209
 12/10/2013,Championship,Spring,r4,1,Nedax Racing,2:18:47,8327,4,0.829,0.84,
 12/10/2013,Championship,Spring,r4,1,Blink,2:03:29,7409,5,0.947,0.98,
-12/10/2013,Championship,Spring,r4,1,Rocket Science,2:24:24,8664,6,0.823,0.82,
-12/10/2013,Championship,Spring,r4,1,Magic Trick,2:14:32,8072,7,0.889,0.875,
-12/10/2013,Championship,Spring,r4,1,Ran Tan II,1:57:38,7058,8,1.05,1.04,
+12/10/2013,Championship,Spring,r4,1,Rocket Science,2:24:24,8664,7,0.823,0.82,
+12/10/2013,Championship,Spring,r4,1,Magic Trick,2:14:32,8072,8,0.889,0.875,
+12/10/2013,Championship,Spring,r4,1,Ran Tan II,1:57:38,7058,6,1.000,1.04,
 12/10/2013,Championship,Spring,r4,2,After Midnight,1:42:28,6148,1,0.719,0.715,
 12/10/2013,Championship,Spring,r4,2,Whistler III,1:41:16,6076,2,0.731,0.725,0.95
 12/10/2013,Championship,Spring,r4,2,Wellington Spirit Bronze,1:40:35,6035,3,0.754,0.79,
@@ -117,6 +117,32 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,RankAppld,TCFapplied
 1/11/2013,Rum,Rum,r1,Combined,White Cavalier,<dnf>,,,,,
 1/11/2013,Rum,Rum,r1,Combined,Rosschild,<dnf>,,,,,
 1/11/2013,Rum,Rum,r1,Combined,Charlie,<dnf>,,,,,
+2/11/2013,Championship,Island Bay,r1,1,Magic Trick,2:32:16,9136,1,0.882,0.875,
+2/11/2013,Championship,Island Bay,r1,1,Blink,2:23:00,8580,2,0.944,0.98,
+2/11/2013,Championship,Island Bay,r1,1,Ran Tan II,2:23:37,8617,3,0.994,1.04,
+2/11/2013,Championship,Island Bay,r1,1,Drinks Trolley,2:53:47,10427,4,0.833,0.84,
+2/11/2013,Championship,Island Bay,r1,1,Revs,2:40:52,9652,5,0.899,0.885,1.234
+2/11/2013,Championship,Island Bay,r1,1,Wedgetail,2:33:40,9220,6,0.945,0.95,1.209
+2/11/2013,Championship,Island Bay,r1,1,The Guarantee,2:56:41,10601,7,0.836,0.845,
+2/11/2013,Championship,Island Bay,r1,1,Rocket Science,3:02:12,10932,8,0.816,0.82,
+2/11/2013,Championship,Island Bay,r1,2,Montego Bay III,3:10:25,11425,1,0.701,0.745,
+2/11/2013,Championship,Island Bay,r1,2,Floating Free,3:21:28,12088,2,0.702,,
+2/11/2013,Championship,Island Bay,r1,2,Eat My Shorts,3:16:10,11770,3,0.732,0.745,
+2/11/2013,Championship,Island Bay,r1,2,After Midnight,3:28:15,12495,4,0.724,0.715,
+2/11/2013,Championship,Island Bay,r1,2,Blue Magic,3:17:11,11831,5,0.749,0.735,0.955
+2/11/2013,Championship,Island Bay,r1,2,Wiseguy,3:31:05,12665,6,0.717,,
+2/11/2013,Championship,Island Bay,r1,2,Prime Mover,3:16:35,11795,7,0.745,0.765,0.963
+2/11/2013,Championship,Island Bay,r1,2,Gucci,3:17:20,11840,8,0.747,0.755,0.963
+2/11/2013,Championship,Island Bay,r1,2,Whistler III,3:28:36,12516,9,0.736,0.725,0.95
+2/11/2013,Championship,Island Bay,r1,2,Incantare,3:34:11,12851,10,0.713,0.725,
+2/11/2013,Championship,Island Bay,r1,2,Airship,3:24:50,12290,11,0.756,0.735,
+2/11/2013,Championship,Island Bay,r1,3,Charlie,4:04:39,14679,1,0.58,,
+2/11/2013,Championship,Island Bay,r1,3,Rosschild,3:49:24,13764,2,0.635,0.68,
+2/11/2013,Championship,Island Bay,r1,3,Maranui,4:22:32,15752,3,0.55,,
+2/11/2013,Championship,Island Bay,r1,3,White Cavalier,4:17:30,15450,4,0.568,,
+2/11/2013,Championship,Island Bay,r1,3,Saucy Sausage,3:58:33,14313,5,0.629,0.63,
+2/11/2013,Championship,Island Bay,r1,3,Titus Canby,3:41:32,13292,6,0.691,0.69,
+2/11/2013,Championship,Island Bay,r1,Open,St Laurence,2:45:12,9912,1,1.034,,
 2/11/2013,Island Bay,Island Bay,r1,Combined,Magic Trick,2:32:16,9136,1,0.891,0.875,
 2/11/2013,Island Bay,Island Bay,r1,Combined,Blink,2:23:00,8580,2,0.963,0.98,
 2/11/2013,Island Bay,Island Bay,r1,Combined,Montego Bay III,3:10:25,11425,3,0.724,0.745,

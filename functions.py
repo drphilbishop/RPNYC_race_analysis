@@ -5,6 +5,44 @@ import datetime as dt
 import numpy as np
 
 
+# Read selected columns from raw CSV file and make boat name the index
+def input_csv(path,filename,CSVcolNums,CSVcolHdrs):
+    raw_data = pd.read_csv(path + filename, sep=',', header=None, usecols=CSVcolNums)
+    raw_data.columns = CSVcolHdrs
+    raw_data = raw_data.set_index('Boat name')
+    return raw_data
+
+
+# Convert elapsed time (hh:mm:ss or mm:ss or <xxx>) to seconds as an integer
+def et2seconds(x):
+    if '<' in x:
+        return np.nan    # np.nan is preferable to 'NaN', NaN, or 0
+    else:
+        if len(x) > 5:
+            hours = int(x.split(':')[0])
+            minutes = int(x.split(':')[1])
+            seconds = int(x.split(':')[2])
+            return seconds + minutes*60 + hours*60*60
+        else:
+            minutes = int(x.split(':')[0])
+            seconds = int(x.split(':')[1])
+            return seconds + minutes*60
+
+
+# Extract division from Stuff field
+def get_division(x):
+    if 'Division' in x:
+        return x.split('Division')[1].replace(' ','')[0]  # assumes returned value is a single character - will fail if div is not, 1, 2, 3, A, B, etc
+    else:
+        if 'Open, start' in x:
+            return x.split(', start')[0]
+        else:
+            if 'Classics, start' in x:
+                return x.split(', start')[0]
+            else:
+                return 'Combined'
+
+
 # Compute TCFactual - what the TCF should have been on the day. It might be different to the TCF applied on the day.
 def TCFactual(df,indexKey=None,newTCFvalue=None): 
     key = (df['Boat name'],indexKey)                                # Get the boat-handicap key
