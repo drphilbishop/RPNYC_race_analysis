@@ -182,19 +182,19 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,RankAppld,TCFapplied
 8/11/2013,Rum,Rum,r2,Combined,White Cavalier,1:55:51,6951,5,0.581,,
 8/11/2013,Rum,Rum,r2,Combined,Wellington Spirit Bronze,1:29:51,5391,6,0.768,,
 8/11/2013,Rum,Rum,r2,Combined,Gucci,1:33:21,5601,7,0.748,,
-9/11/2013,Offshore,Brothers,r1,Combined,Wai-Aniwa,10:59:20,39560,1,0.67,0.69,
-9/11/2013,Offshore,Brothers,r1,Combined,Blue Magic,10:11:43,36703,2,0.73,0.745,0.955
-9/11/2013,Offshore,Brothers,r1,Combined,Prime Mover,10:01:35,36095,3,0.76,0.765,0.963
-9/11/2013,Offshore,Brothers,r1,Combined,Vendetta,10:44:50,38690,4,0.71,,
-9/11/2013,Offshore,Brothers,r1,Combined,Gucci,10:19:14,37154,5,0.746,0.755,0.963
-9/11/2013,Offshore,Brothers,r1,Combined,Montego Bay III,10:35:38,38138,6,0.739,0.755,
-9/11/2013,Offshore,Brothers,r1,Combined,Midnight Express,10:09:15,36555,7,0.78,,
-9/11/2013,Offshore,Brothers,r1,Combined,Revs,8:58:38,32318,8,0.884,0.9,1.234
-9/11/2013,Offshore,Brothers,r1,Combined,Wedgetail,8:30:14,30614,9,0.943,0.96,1.209
-9/11/2013,Offshore,Brothers,r1,Combined,Nedax Racing,9:44:14,35054,10,0.84,0.86,
-9/11/2013,Offshore,Brothers,r1,Combined,The Guarantee,9:46:03,35163,11,0.845,0.85,
-9/11/2013,Offshore,Brothers,r1,Combined,Blink,8:20:23,30023,12,1.01,1.04,
-9/11/2013,Offshore,Brothers,r1,Combined,Ran Tan II,8:24:08,30248,13,1.08,1.12,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Wai-Aniwa,10:59:20,39560,1,0.67,0.69,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Blue Magic,10:11:43,36703,2,0.73,0.745,0.955
+9/11/2013,Offshore,Offshore,Brothers,Combined,Prime Mover,10:01:35,36095,3,0.76,0.765,0.963
+9/11/2013,Offshore,Offshore,Brothers,Combined,Vendetta,10:44:50,38690,4,0.71,,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Gucci,10:19:14,37154,5,0.746,0.755,0.963
+9/11/2013,Offshore,Offshore,Brothers,Combined,Montego Bay III,10:35:38,38138,6,0.739,0.755,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Midnight Express,10:09:15,36555,7,0.78,,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Revs,8:58:38,32318,8,0.884,0.9,1.234
+9/11/2013,Offshore,Offshore,Brothers,Combined,Wedgetail,8:30:14,30614,9,0.943,0.96,1.209
+9/11/2013,Offshore,Offshore,Brothers,Combined,Nedax Racing,9:44:14,35054,10,0.84,0.86,
+9/11/2013,Offshore,Offshore,Brothers,Combined,The Guarantee,9:46:03,35163,11,0.845,0.85,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Blink,8:20:23,30023,12,1.01,1.04,
+9/11/2013,Offshore,Offshore,Brothers,Combined,Ran Tan II,8:24:08,30248,13,1.08,1.12,
 9/11/2013,Fleet,At Home,r1,Combined,White Cavalier,2:50:33,10233,1,0.524,,
 9/11/2013,Fleet,At Home,r1,Combined,Rosschild,2:27:45,8865,2,0.626,0.695,
 9/11/2013,Fleet,At Home,r1,Combined,Marishka,2:31:24,9084,3,0.615,0.655,
@@ -320,3 +320,19 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,RankAppld,TCFapplied
 4/12/2013,Fleet,Twilight 1,r5,Combined,Structural Analysis,1:12:12,4332,8,0.785,,
 4/12/2013,Fleet,Twilight 1,r5,Combined,Saucy Sausage,1:33:17,5597,9,0.628,0.63,
 4/12/2013,Fleet,Twilight 1,r5,Combined,Blink,1:03:09,3789,10,0.95,0.98,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Wai-Aniwa,4:53:25,17605,1,0.675,0.69,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Blink,3:28:37,12517,2,1.002,1.04,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Prime Mover,4:35:00,16500,3,0.766,0.765,0.963
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Young Nicholson,4:30:00,16200,4,0.8,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Wedgetail,3:50:05,13805,5,0.94,0.96,1.209
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Revs,4:07:19,14839,6,0.884,0.9,1.234
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Vendetta,5:06:36,18396,7,0.715,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Khamsin,4:52:00,17520,8,0.756,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Blue Magic,5:00:15,18015,9,0.735,0.745,0.955
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,The Guarantee,4:24:28,15868,10,0.839,0.85,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Sirrah,5:02:00,18120,11,0.74,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Gucci,5:03:07,18187,12,0.751,0.755,0.963
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Midnight Express,4:54:20,17660,13,0.78,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Excel,5:21:07,19267,14,0.721,,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Ran Tan II,3:38:50,13130,15,1.072,1.12,
+14/12/2013,Offshore,Offshore,Cook Strait Classic,Combined,Flying Fox,5:07:00,18420,16,0.781,,

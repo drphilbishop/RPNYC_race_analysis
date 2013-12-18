@@ -192,19 +192,19 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,corrSecs,refTime,Ran
 9 Nov,Fleet,At Home,r1,Combined,Wiseguy,2:25:14,8714.0,6108.0,5836.0,8.0,8.0,-,,,0.701,0.701,0.0,0.67,-4.42,0.68,0.696
 9 Nov,Fleet,At Home,r1,Combined,Rocket Science,2:08:22,7702.0,6261.0,5836.0,9.0,9.0,-,0.83,,0.813,0.813,0.0,0.758,-6.77,0.789,0.807
 9 Nov,Fleet,At Home,r1,Combined,Structural Analysis,2:18:28,8308.0,6588.0,5836.0,10.0,10.0,-,,,0.7929999999999999,0.793,-0.0,0.702,-11.48,0.769,0.787
-9 Nov,Offshore,Brothers,r1,Combined,Wai-Aniwa,10:59:20,39560.0,26505.0,28512.0,1.0,1.0,-,0.69,,0.67,0.67,0.0,0.721,7.61,0.69,0.675
-9 Nov,Offshore,Brothers,r1,Combined,Blue Magic,10:11:43,36703.0,26793.0,28512.0,2.0,2.0,-,0.745,0.955,0.73,0.73,0.0,0.777,6.44,0.752,0.735
-9 Nov,Offshore,Brothers,r1,Combined,Prime Mover,10:01:35,36095.0,27432.0,28512.0,3.0,3.0,-,0.765,0.963,0.76,0.76,0.0,0.79,3.95,0.783,0.766
-9 Nov,Offshore,Brothers,r1,Combined,Vendetta,10:44:50,38690.0,27469.0,28512.0,4.0,4.0,-,,,0.71,0.71,0.0,0.737,3.8,0.731,0.715
-9 Nov,Offshore,Brothers,r1,Combined,Gucci,10:19:14,37154.0,27716.0,28512.0,5.0,5.0,-,0.755,0.963,0.746,0.746,0.0,0.767,2.82,0.767,0.751
-9 Nov,Offshore,Brothers,r1,Combined,Montego Bay III,10:35:38,38138.0,28183.0,28512.0,6.0,6.0,-,0.755,,0.7390000000000001,0.739,0.0,0.748,1.22,0.748,0.741
-9 Nov,Offshore,Brothers,r1,Combined,Midnight Express,10:09:15,36555.0,28512.0,28512.0,7.0,7.0,-,,,0.78,0.78,0.0,0.78,0.0,0.78,0.78
-9 Nov,Offshore,Brothers,r1,Combined,Revs,8:58:38,32318.0,28569.0,28512.0,8.0,8.0,-,0.9,1.234,0.884,0.884,0.0,0.882,-0.23,0.882,0.883
-9 Nov,Offshore,Brothers,r1,Combined,Wedgetail,8:30:14,30614.0,28869.0,28512.0,9.0,9.0,-,0.96,1.209,0.943,0.943,0.0,0.931,-1.27,0.931,0.94
-9 Nov,Offshore,Brothers,r1,Combined,Nedax Racing,9:44:14,35054.0,29445.0,28512.0,10.0,10.0,-,0.86,,0.84,0.84,0.0,0.813,-3.21,0.815,0.834
-9 Nov,Offshore,Brothers,r1,Combined,The Guarantee,9:46:03,35163.0,29712.0,28512.0,11.0,11.0,-,0.85,,0.845,0.845,0.0,0.811,-4.02,0.82,0.839
-9 Nov,Offshore,Brothers,r1,Combined,Blink,8:20:23,30023.0,30323.0,28512.0,12.0,12.0,-,1.04,,1.01,1.01,0.0,0.95,-5.94,0.98,1.002
-9 Nov,Offshore,Brothers,r1,Combined,Ran Tan II,8:24:08,30248.0,32667.0,28512.0,13.0,13.0,-,1.12,,1.08,1.08,0.0,0.943,-12.69,1.048,1.072
+9 Nov,Offshore,Offshore,Brothers,Combined,Wai-Aniwa,10:59:20,39560.0,26505.0,28512.0,1.0,1.0,-,0.69,,0.67,0.67,0.0,0.721,7.61,0.69,0.675
+9 Nov,Offshore,Offshore,Brothers,Combined,Blue Magic,10:11:43,36703.0,26793.0,28512.0,2.0,2.0,-,0.745,0.955,0.73,0.73,0.0,0.777,6.44,0.752,0.735
+9 Nov,Offshore,Offshore,Brothers,Combined,Prime Mover,10:01:35,36095.0,27432.0,28512.0,3.0,3.0,-,0.765,0.963,0.76,0.76,0.0,0.79,3.95,0.783,0.766
+9 Nov,Offshore,Offshore,Brothers,Combined,Vendetta,10:44:50,38690.0,27469.0,28512.0,4.0,4.0,-,,,0.71,0.71,0.0,0.737,3.8,0.731,0.715
+9 Nov,Offshore,Offshore,Brothers,Combined,Gucci,10:19:14,37154.0,27716.0,28512.0,5.0,5.0,-,0.755,0.963,0.746,0.746,0.0,0.767,2.82,0.767,0.751
+9 Nov,Offshore,Offshore,Brothers,Combined,Montego Bay III,10:35:38,38138.0,28183.0,28512.0,6.0,6.0,-,0.755,,0.7390000000000001,0.739,0.0,0.748,1.22,0.748,0.741
+9 Nov,Offshore,Offshore,Brothers,Combined,Midnight Express,10:09:15,36555.0,28512.0,28512.0,7.0,7.0,-,,,0.78,0.78,0.0,0.78,0.0,0.78,0.78
+9 Nov,Offshore,Offshore,Brothers,Combined,Revs,8:58:38,32318.0,28569.0,28512.0,8.0,8.0,-,0.9,1.234,0.884,0.884,0.0,0.882,-0.23,0.882,0.883
+9 Nov,Offshore,Offshore,Brothers,Combined,Wedgetail,8:30:14,30614.0,28869.0,28512.0,9.0,9.0,-,0.96,1.209,0.943,0.943,0.0,0.931,-1.27,0.931,0.94
+9 Nov,Offshore,Offshore,Brothers,Combined,Nedax Racing,9:44:14,35054.0,29445.0,28512.0,10.0,10.0,-,0.86,,0.84,0.84,0.0,0.813,-3.21,0.815,0.834
+9 Nov,Offshore,Offshore,Brothers,Combined,The Guarantee,9:46:03,35163.0,29712.0,28512.0,11.0,11.0,-,0.85,,0.845,0.845,0.0,0.811,-4.02,0.82,0.839
+9 Nov,Offshore,Offshore,Brothers,Combined,Blink,8:20:23,30023.0,30323.0,28512.0,12.0,12.0,-,1.04,,1.01,1.01,0.0,0.95,-5.94,0.98,1.002
+9 Nov,Offshore,Offshore,Brothers,Combined,Ran Tan II,8:24:08,30248.0,32667.0,28512.0,13.0,13.0,-,1.12,,1.08,1.08,0.0,0.943,-12.69,1.048,1.072
 13 Nov,Fleet,Twilight 1,r2,Combined,Whistler III,1:25:06,5106.0,3701.0,3858.0,1.0,1.0,-,0.74,0.95,0.725,0.725,0.0,0.756,4.28,0.747,0.729
 13 Nov,Fleet,Twilight 1,r2,Combined,Blue Magic,1:25:30,5130.0,3770.0,3858.0,2.0,2.0,-,0.745,0.955,0.735,0.735,0.0,0.752,2.31,0.752,0.739
 13 Nov,Fleet,Twilight 1,r2,Combined,Eat My Shorts,1:25:47,5147.0,3808.0,3858.0,3.0,3.0,-,0.745,,0.7390000000000001,0.74,-0.001,0.75,1.35,0.75,0.741
@@ -320,3 +320,19 @@ Date,Handicap,Series,Race,Div,Boat name,Elapsed time,ETsecs,corrSecs,refTime,Ran
 4 Dec,Fleet,Twilight 1,r5,Combined,Structural Analysis,1:12:12,4332.0,3400.0,3300.0,8.0,8.0,-,,,0.785,0.785,0.0,0.762,-2.93,0.762,0.783
 4 Dec,Fleet,Twilight 1,r5,Combined,Saucy Sausage,1:33:17,5597.0,3514.0,3300.0,9.0,9.0,-,0.63,,0.628,0.628,0.0,0.59,-6.05,0.609,0.625
 4 Dec,Fleet,Twilight 1,r5,Combined,Blink,1:03:09,3789.0,3599.0,3300.0,10.0,10.0,-,0.98,,0.95,0.95,0.0,0.871,-8.32,0.921,0.944
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Wai-Aniwa,4:53:25,17605.0,11883.0,13241.0,1.0,1.0,-,0.69,,0.675,0.675,0.0,0.752,11.41,0.695,0.68
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Blink,3:28:37,12517.0,12542.0,13241.0,2.0,2.0,-,1.04,,1.002,1.002,0.0,1.058,5.59,1.032,1.007
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Prime Mover,4:35:00,16500.0,12639.0,13241.0,3.0,3.0,-,0.765,0.963,0.7659999999999999,0.766,-0.0,0.802,4.7,0.789,0.772
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Young Nicholson,4:30:00,16200.0,12960.0,13241.0,4.0,4.0,-,,,0.8,0.8,0.0,0.817,2.12,0.817,0.804
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Wedgetail,3:50:05,13805.0,12976.0,13241.0,5.0,5.0,-,0.96,1.209,0.94,0.94,0.0,0.959,2.02,0.959,0.943
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Revs,4:07:19,14839.0,13102.0,13241.0,6.0,6.0,-,0.9,1.234,0.884,0.883,0.001,0.892,1.02,0.892,0.885
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Vendetta,5:06:36,18396.0,13153.0,13241.0,7.0,7.0,-,,,0.715,0.715,0.0,0.72,0.7,0.72,0.717
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Blue Magic,5:00:15,18015.0,13241.0,13241.0,9.0,8.0,No,0.745,0.955,0.735,0.735,0.0,0.735,0.0,0.735,0.736
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Khamsin,4:52:00,17520.0,13245.0,13241.0,8.0,9.0,No,,,0.7559999999999999,0.756,-0.0,0.756,0.0,0.756,0.756
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,The Guarantee,4:24:28,15868.0,13313.0,13241.0,10.0,10.0,-,0.85,,0.8390000000000001,0.839,0.0,0.834,-0.6,0.834,0.837
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Sirrah,5:02:00,18120.0,13408.0,13241.0,11.0,11.0,-,,,0.74,0.74,0.0,0.731,-1.22,0.731,0.738
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Gucci,5:03:07,18187.0,13658.0,13241.0,12.0,12.0,-,0.755,0.963,0.7509999999999999,0.751,-0.0,0.728,-3.06,0.728,0.748
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Midnight Express,4:54:20,17660.0,13774.0,13241.0,13.0,13.0,-,,,0.78,0.78,0.0,0.75,-3.85,0.757,0.775
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Excel,5:21:07,19267.0,13891.0,13241.0,14.0,14.0,-,,,0.721,0.721,0.0,0.687,-4.72,0.699,0.716
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Ran Tan II,3:38:50,13130.0,14075.0,13241.0,15.0,15.0,-,1.12,,1.072,1.072,0.0,1.008,-5.97,1.04,1.064
+14 Dec,Offshore,Offshore,Cook Strait Classic,Combined,Flying Fox,5:07:00,18420.0,14386.0,13241.0,16.0,16.0,-,,,0.7809999999999999,0.781,-0.0,0.719,-7.94,0.758,0.775
