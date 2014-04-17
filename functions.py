@@ -157,6 +157,11 @@ def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=No
         sumTCFclmps = sum(values[fromIdx:len(values)])     # Calculate sum of values fromIdx to len(values)-1 (we sum up to second to last because we do not include this race's TCFclmp)   
         newTCF = (sumTCFclmps + df['TCFactual'])/numValuesUsed # Calculate the newTCF. Here we add the TCFactual from this race to sumTCFclmps and divide by (numValuesUsed+1)    
         newTCFvalue[key].append(newTCF)                    # Append newTCF to newTCFvalue dictionary        
+#        print key
+#        print "numValuesUsed:", numValuesUsed
+#        print "fromIdx:", fromIdx
+#        print "sumTCFclmps:", sumTCFclmps
+#        print "newTCF:",newTCF
         return round(newTCF, 3)
     else:                                                  # If less than 4 finishers in this race
         return df['TCFactual']                             # newTCF remains the same the TCFactual    
