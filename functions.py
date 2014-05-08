@@ -127,7 +127,7 @@ def TCFclmp(x, loClamp = .03, upClamp = .03):
 def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,indexKey=None,TCFclampHistoryAndSeeds=None):
     key = (df['Boat name'],indexKey)               # Construct a key from boat name
     # If tcfClampHistoryAndSeeds[key] is empty (meaning hasnt raced before), add seeds. 
-    percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
+    percentFinished = len(race.dropna(subset=['ETsecs']))/len(race)
     if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
         if not TCFclampHistoryAndSeeds[key]:       
             seedValue = df['TCFactual']            # Get seed value from TCFactual
@@ -144,13 +144,13 @@ def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,
 
 # Compute newTCF - the TCF calculated after this race to apply for the next race
 def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=None,TCFclampHistoryAndSeeds=None,newTCFvalue=None): 
-    #numFinished is the minimum number of finishers required to finish a race
-    #pctFinished is the percentage of boats in a fleet required to finish a race
-    #numPastPerfs is the total number of values used in the newTCF calculation. Includes this races actualTCF and TCFclamp history of last 4 races, using seeds if less than 4 previous races exist
+    # numFinished is the minimum number of boats required to finish a race for TCF to be updated
+    # pctFinished is the minimum percentage of boats starting a race that must finish in order for TCF to be updated
+    # numPastPerfs is the number of most recent performances to use in new TCF calculation.
     key = (df['Boat name'],indexKey)                       # Construct a key from boat name and handicap type
-    values=TCFclampHistoryAndSeeds[key]                    # Get list of seeds and previous TFCclamp values
-    percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
-    # If there are 4 or more finishers in this race, compute the newTCF
+    values = TCFclampHistoryAndSeeds[key]                  # Get list of seeds and previous clamped TFC values
+    percentFinished = len(race.dropna(subset=['ETsecs']))/len(race)
+    # If certain conditions for this race are satisified, compute the new TCF
     if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
         numValuesUsed = min(len(values)+1,numPastPerfs+1)  # Get the number of seed and TCFclamp values to be used in the formula
         fromIdx=max(0,len(values)-numPastPerfs)            # Get the index to start summing from, will be either 0 or the len(values)-5 index depending which is larger
@@ -163,8 +163,30 @@ def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=No
 #        print "sumTCFclmps:", sumTCFclmps
 #        print "newTCF:",newTCF
         return round(newTCF, 3)
-    else:                                                  # If less than 4 finishers in this race
+    else:                                                  # If less than numFinished finishers or less than percentFinished share of the fleet in this race
         return df['TCFactual']                             # newTCF remains the same the TCFactual    
+
+
+# Compute new TCF as a (weighted) moving average of recent (3 in this case) sailed-to performances
+def newMA3TCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=3,race=None,indexKey=None,TCFclampHistoryAndSeeds=None,newTCFvalue=None): 
+    # numFinished is the minimum number of boats required to finish a race for TCF to be updated
+    # pctFinished is the minimum percentage of boats starting a race that must finish in order for TCF to be updated
+    # numPastPerfs is the number of most recent performances to use in new TCF calculation.
+    key = (df['Boat name'],indexKey)                       # Construct a key from boat name and handicap type
+    values = TCFclampHistoryAndSeeds[key]                  # Get list of seeds and previous clamped TFC values
+    percentFinished = len(race.dropna(subset=['ETsecs']))/len(race)
+    # If certain conditions for this race are satisified, compute the new TCF
+    if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
+        fromIdx = max(0,len(values)-numPastPerfs)          # Get the index to begin summing from
+        newTCF = 0.2 * values[fromIdx] + 0.3 * values[fromIdx+1] + 0.5 * values[fromIdx+2]
+        newTCFvalue[key].append(newTCF)                    # Append newTCF to newTCFvalue dictionary        
+#        print key
+#        print "fromIdx:", fromIdx
+#        print "Components:", values[fromIdx], '  ', values[fromIdx+1], '   ', values[fromIdx+2]
+#        print "newTCF:",newTCF
+        return round(newTCF, 3)
+    else:
+        return df['TCFactual']
 
 
 # Compute difference between TCFapplied and TCFactual 
