@@ -1,0 +1,33 @@
+Name,no,lat,long,Description
+startRPNYC,SR,41 17.150S,174 47.200E,Start line at RPNYC
+startJern,SJ,41 17.150S,174 48.400E,Start line at Pt Jerningham
+topWL,1,41 17.150S,174 48.400E,Laid windward mark: cylindrical ORANGE buoy with number affixed
+wingWL,2,41 17.150S,174 48.400E,Laid wing mark: cylindrical ORANGE buoy with number affixed
+botWL,3,41 17.150S,174 48.400E,Laid leeward mark: cylindrical ORANGE buoy with number affixed
+Ngauranga,4,41 15.500S,174 48.400E,Ngauranga Buoy: spherical ORANGE buoy with number affixed
+Somes,5,41 15.500S,174 51.160E,Somes Island Buoy: spherical ORANGE buoy with number affixed
+no1Light,6,41 19.060S,174 51.350E,Number One Leading Light (41 19.060S 174 51.350E)
+MngMinnie,7,41 21.140S,174 50.110E,Barrett Reef Buoy (41 21.140S 174 50.110E)
+EvansBay,8,41 17.500S,174 48.700E,"Evans Bay Buoy: laid cylindrical ORANGE buoy with number affixed, located anywhere in Evans Bay"
+Jerningham,9,41 16.950S,174 48.200E,Point Jerningham Buoy: laid spherical or cylindrical ORANGE buoy
+Falcon,10,41 18.300S,174 50.950E,Falcon Shoal Buoy: spherical ORANGE buoy with number affixed
+Korokoro,11,41 14.500S,174 51.000E,Korokoro Buoy: spherical ORANGE buoy with number affixed
+WardIsland,12,41 17.400S,174 52.800E,Ward Island Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+IsldBayIn,13,41 21.300S,174 46.700E,Island Bay Inner Buoy: laid spherical or cylindrical ORANGE buoy
+IsldBayOut,14,41 21.300S,174 46.700E,Island Bay Outer Buoy: laid spherical or cylindrical ORANGE buoy
+Halswell,15,41 16.850S,174 49.400E,Point Halswell Buoy: laid spherical or cylindrical ORANGE buoy
+Horokiwi,16,41 15.050S,174 49.600E,Horokiwi Buoy: laid spherical or cylindrical ORANGE buoy
+Mahina,17,41 16.031S,174 54.143E,Mahina Bay Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+DaysBay,18,41 16.688S,174 53.794E,Days Bay Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+PetoneWharf,19,41 14.190S,174 52.486E,Petone Wharf Buoy: laid spherical or cylindrical ORANGE or YELLOW buoy
+EastSomes,20,41 15.111S,174 52.181E,Eastern Somes Island Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+Seaview,21,41 14.913S,174 53.402E,Seaview Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+HopeShoal,22,41 17.780S,174 51.850E,Hope Shoal Rear Light (41 17.780S 174 51.850E)
+JessieStBuoy,23,41 14.453S,174 53.097E,Jessie Street Buoy: spherical or cylindrical ORANGE or YELLOW buoy
+SthEastSomes,24,41 15.702S,174 52.286E,South Eastern Somes Island Buoy: spherical ORANGE buoy
+ShoalPile,25,41 18.610S,174 48.430E,Fixed light ('Shoal Pile') at southern end of Evans Bay (41 18.610S 174 48.430E)
+Mokopuna,26,41 14.800S,174 51.900S,Mokopuna Island and reef
+SthSomes,27,41 15.850S,174 51.900E,South Somes Buoy: spherical or cylindrical ORANGE buoy
+NthSomes,28,41 14.500S,174 52.000E,North Somes Buoy: laid spherical or cylindrical ORANGE buoy
+finishRPNYC,FR,41 17.150S,174 47.200E,Finish line at RPNYC
+finishJern,FJ,41 17.150S,174 48.400E,Finish line at Pt Jerningham

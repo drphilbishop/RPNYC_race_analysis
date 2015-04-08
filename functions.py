@@ -14,10 +14,11 @@ def input_csv(path,filename,CSVcolNums,CSVcolHdrs):
 
 
 # Read input CSV file
-def Read_CSV(datapath,filename):    
-    df = pd.read_csv(datapath + '\\' + filename,sep=',',parse_dates=True,dayfirst=True)
+def Read_CSV(datapathandfile):    
+    df = pd.read_csv(datapathandfile,sep=',',parse_dates=True,dayfirst=True)
+    df = df.dropna(how='all')  # remove any blanks lines
     if df['Date'].apply(lambda x: type(x)).drop_duplicates()[0] == str: #if date columns are all strings then convert to datetime
-        df['Date'] = df['Date'].apply(lambda x: dt.datetime.strptime(x,'%d/%m/%Y'))         
+        df['Date'] = df['Date'].apply(lambda x: dt.datetime.strptime(str(x),'%d/%m/%Y'))         
     return df 
     
 
@@ -73,8 +74,8 @@ def corrSecs(df):
     if '<' in df['Elapsed time']:
         return np.nan
     if df['Scoring'] == 1:
-	if math.isnan(df['TCFactual']):
-	    return np.nan
+        if math.isnan(df['TCFactual']):
+            return np.nan
 	else:
 	    return int(df['TCFactual'] * df['ETsecs'])
     elif df['Scoring'] == 2:
@@ -103,12 +104,17 @@ def ref_boat(df):
     x = df.corrSecs.dropna()                  # x is a series formed by extracting the corrSecs column from df
     x.sort()                                  # Ensure series x is sorted in order of ascending corrected seconds, corrSecs
     m = x.median()  
-    if (x==m).sum()==0:                       # (x==m) returns a boolean; the sum equals zero if no boat's time is the median
-        refboat = x[x < m].tail(1).index[0]   # Let the last boat from those boats above the median be the reference boat
-        reftime = int(x[x < m].tail(1).sum()) # Let the corrected time of the reference boat be the reference time 
+    if len(x)==0:
+        reftime = np.nan
+    elif len(x)==1:
+        reftime = m
     else:
-        refboat = x[x==m].index[0]            # Let median boat be the reference boat
-        reftime = m                           # Let the corrected time of the reference boat (also the median time) be the reference time
+        if (x==m).sum()==0:                       # (x==m) returns a boolean; the sum equals zero if no boat's time is the median
+            refboat = x[x < m].tail(1).index[0]   # Let the last boat from those boats above the median be the reference boat
+            reftime = int(x[x < m].tail(1).sum()) # Let the corrected time of the reference boat be the reference time 
+        else:
+            refboat = x[x==m].index[0]            # Let median boat be the reference boat
+            reftime = m                           # Let the corrected time of the reference boat (also the median time) be the reference time
     return reftime
 #   return refboat, reftime
 
@@ -122,7 +128,7 @@ def adjustRefTime(df):
 
 
 # Compute the sailed-to handicap for this race
-def TCFst(x):    
+def TCFst(x):
     if x['Scoring'] == 1:
         if x['corrSecs'] == 'NaN':
 	    return np.nan
@@ -167,15 +173,31 @@ def TCFclmp(x, loClamp = .03, upClamp = .03):
         
 
 # Function to update TCF clamp history and seed data for all boats in a race
+def checkNewScoringAlgorithms(df, currentAlgo=None, indexKey=None, race=None):          
+    key = (df['Boat name'],indexKey)   
+    #print key        
+    TCFalgo = int(df['TCFalgo'])               # Get value from TCFalgo      
+    if not currentAlgo[key]:
+        currentAlgo[key] = TCFalgo    
+    elif currentAlgo[key]:
+        if currentAlgo[key] != TCFalgo:            
+            TCFclampHistoryAndSeeds[key] = []  # Reset clamp history if there is a change in TCFalgo
+        #else:
+            #print 'Same algo'
+    currentAlgo[key] = TCFalgo                 # Current algo
+
+
+# Function to update TCF clamp history and seed data for all boats in a race
 def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,indexKey=None,TCFclampHistoryAndSeeds=None):        
     key = (df['Boat name'],indexKey)               # Construct a key from boat name           
     # If tcfClampHistoryAndSeeds[key] is empty (meaning hasnt raced before), add seeds. 
     percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
+    #print '% finished: '+str(percentFinished)
     #tcf=None
     
     if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:      
         if df['resetTCF'] == 1 or not TCFclampHistoryAndSeeds[key]:       
-            TCFclampHistoryAndSeeds[key] = []    
+            TCFclampHistoryAndSeeds[key] = []  
             seedValue = df['TCFactual']            # Get seed value from TCFactual
             #racedata = (seedValue,df.index)
             if math.isnan(seedValue) == False:     # Make sure TCFactual is not a nan, or else do not add anything.
@@ -184,56 +206,77 @@ def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,
                     
         # Now update the TCFclamp value from this race to the dictionary    
         if TCFclampHistoryAndSeeds[key]:           # If tcfClampHistoryAndSeeds[key] is not empty append the TCFclmp value
-            TCFclampHistoryAndSeeds[key].append(df['TCFclmp'])                
+            #if 'White Cavalier' and 'Two-handed' in key: #print key + ' ' + df['Elapsed time']
+            
+            if not math.isnan(df['TCFclmp']):                
+                TCFclampHistoryAndSeeds[key].append(df['TCFclmp'])     
+            else:
+            	  pass
+                #print 'trying to add a nan at '+str(key) +' ' + str(race)    
         else:                                      # Otherwise do nothing
             pass
 
 
 # Compute newTCF - the TCF calculated after this race to apply for the next race
-def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=None,TCFclampHistoryAndSeeds=None,newTCFvalue=None): 
+def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=None,TCFclampHistoryAndSeeds=None,newTCFvalue=None, numSeeds=2): 
     #numFinished is the minimum number of finishers required to finish a race
     #pctFinished is the percentage of boats in a fleet required to finish a race
     #numPastPerfs is the total number of values used in the newTCF calculation. Includes this races actualTCF and TCFclamp history of last 4 races, using seeds if less than 4 previous races exist
     key = (df['Boat name'],indexKey)                      # Construct a key from boat name and handicap type
     values=TCFclampHistoryAndSeeds[key]                   # Get list of seeds and previous TFCclamp values
     percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
-    # If there are 4 or more finishers in this race, compute the newTCF
-    if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
-        numValuesUsed = min(len(values),numPastPerfs)+1              # Get the number of seed and TCFclamp values to be used in the formula
-        fromIdx=max(0,len(values)-numPastPerfs)                      # Get the index to start summing from, will be either 0 or the len(values)-5 index depending which is larger
-        sumTCFclmps = sum(values[fromIdx:len(values)])  # Calculate sum of values fromIdx to len(values)-1 (we sum up to second to last because we do not include this race's TCFclmp)   
-        newTCF = (sumTCFclmps + df['TCFactual'])/numValuesUsed # Calculate the newTCF. Here we add the TCFactual from this race to sumTCFclmps and divide by (numValuesUsed+1)    
-        newTCFvalue[key].append(newTCF)                   # Append newTCF to newTCFvalue dictionary          
-        return round(newTCF, 3)
-    else:                                                 # If less than 4 finishers in this race
-        return df['TCFactual']                            # newTCF remains the same the TCFactual    
-
-
-# Compute new TCF as a (weighted) moving average of recent (3 in this case) sailed-to performances
-def newMA3TCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=3,race=None,indexKey=None,TCFclampHistoryAndSeeds=None,newTCFvalue=None): 
-    # numFinished is the minimum number of boats required to finish a race for TCF to be updated
-    # pctFinished is the minimum percentage of boats starting a race that must finish in order for TCF to be updated
-    # numPastPerfs is the number of most recent performances to use in new TCF calculation.
-    key = (df['Boat name'],indexKey)                       # Construct a key from boat name and handicap type
-    values = TCFclampHistoryAndSeeds[key]                  # Get list of seeds and previous clamped TFC values
-    percentFinished = len(race.dropna(subset=['ETsecs']))/len(race)
-    # If certain conditions for this race are satisified, compute the new TCF
+    #print '  TCF algo: '+str(df['TCFalgo'])    
+    if df['TCFalgo'] == 1:
+        #print 'Performing algo 1 on ' + str(values) + ' for ' + str(key)
+    	  
+        # If there are 4 or more finishers in this race, compute the newTCF
+        if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
+            numValuesUsed = min(len(values),numPastPerfs)+1              # Get the number of seed and TCFclamp values to be used in the formula
+            fromIdx=max(0,len(values)-numPastPerfs)                      # Get the index to start summing from, will be either 0 or the len(values)-5 index depending which is larger
+            sumTCFclmps = sum(values[fromIdx:len(values)])  # Calculate sum of values fromIdx to len(values)-1 (we sum up to second to last because we do not include this race's TCFclmp)   
+            newTCF = (sumTCFclmps + df['TCFactual'])/numValuesUsed # Calculate the newTCF. Here we add the TCFactual from this race to sumTCFclmps and divide by (numValuesUsed+1)    
+            newTCFvalue[key].append(newTCF)                   # Append newTCF to newTCFvalue dictionary          
+            #print '  New TCF: '+str(newTCF)
+            return round(newTCF, 3)
+        else:                                                 # If less than 4 finishers in this race
+            return df['TCFactual']                            # newTCF remains the same the TCFactual  
+		        
+    elif df['TCFalgo'] == 2:
         
-    if df['Scoring'] == 2 or df['Scoring'] == 3:
-        return np.nan 
-    elif df['Scoring'] == 1:    
-		    if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
-		        fromIdx = max(0,len(values)-numPastPerfs)          # Get the index to begin summing from
-		        newTCF = 0.2 * values[fromIdx] + 0.3 * values[fromIdx+1] + 0.5 * values[fromIdx+2]
-		        newTCFvalue[key].append(newTCF)                    # Append newTCF to newTCFvalue dictionary        
-		#        print key
-		#        print "fromIdx:", fromIdx
-		#        print "Components:", values[fromIdx], '  ', values[fromIdx+1], '   ', values[fromIdx+2]
-		#        print "newTCF:",newTCF
-		        return round(newTCF, 3)
-		    else:
-		        return df['TCFactual']
-
+        raceCount = max(len(values)-numSeeds,0)        
+        #print str(raceCount[key])
+                       
+        if '<' not in df['Elapsed time'] and len(race.dropna(subset=['ETsecs'])) >= numFinished and percentFinished >= pctFinished:
+            #print 'Performing algo 2 on ' + str(values) + ' for ' + str(key)
+            #print 'Race count: ' + str(raceCount)
+            	
+            #print df['Elapsed time']
+            
+            #numValuesUsed = min(len(values),numPastPerfs)+1              # Get the number of seed and TCFclamp values to be used in the formula
+            #lastIdx=len(values)-1                             # Get last index of values. Work backwards
+            
+            #print 'clmphistory: '+str(values)     
+            if raceCount == 0:
+                newTCF = np.nan     
+            elif raceCount == 1:
+                newTCF = .3*values[-1] + .7*values[0]
+            elif raceCount == 2:
+            	  newTCF = .3*values[-1] + .25*values[-2] + .45*values[0]
+            elif raceCount == 3:
+                newTCF = .3*values[-1] + .25*values[-2] + .2*values[-3] + .25*values[0]
+            elif raceCount == 4:
+            	  newTCF = .3*values[-1] + .25*values[-2] + .2*values[-3] + .15*values[-4] + .1*values[0]
+            elif raceCount >= 5:
+            	  newTCF = .3*values[-1] + .25*values[-2] + .2*values[-3] + .15*values[-4] + .1*values[-5]                        
+            #newTCF = 0.5 * values[lastIdx] + 0.3 * values[lastIdx-1] + 0.2 * values[lastIdx-2]            
+            newTCFvalue[key].append(newTCF)                   # Append newTCF to newTCFvalue dictionary    
+            #print '  New TCF: '+str(newTCF)      
+            return round(newTCF, 3)
+        else:                                                 # If less than 4 finishers in this race
+            return df['TCFactual']                            # newTCF remains the same the TCFactual                      
+        
+        return
+    
 
 # Compute difference between TCFapplied and TCFactual 
 def TCFdiff(df):
@@ -244,3 +287,60 @@ def TCFdiff(df):
             return round(float(df['TCFapplied'] - df['TCFactual']), 3)
     elif df['Scoring'] == 2 or df['Scoring'] == 3:
         return np.nan 
+
+
+### Course/distance related functions
+
+# Convert lat or long with decimal minutes (ddd mm.mmmS) to decimal degrees (dd.dddd)
+# e.g. 41 15.500S (41 degrees, 15.500 mins South) = 41.25833 degrees.
+def latlongdm2decdegrees(ll):
+    heading = ll[-1:]
+    degrees = int(ll.split(' ')[0])
+    minutes = float(ll[:-1].split(' ')[1])
+    decdegrees = degrees + (minutes / 60.0)
+#   return (heading, degrees, minutes, decdegrees)
+    return decdegrees
+
+# Function to strip out P's and S's from marks in course list
+def ridPS(x):
+    return x.replace('P-','-').replace('S-','-')
+
+
+# Function to compute distance of a course.
+def course_dist(thiscourse,marks):
+    # Get lat/long for adjacent marks
+    # dist function based on http://www.platoscave.net/blog/2009/oct/5/calculate-distance-latitude-longitude-python/ - downloaded on 8/7/2013
+    def dist(x):
+        lat1 = x['latdb4']     # decimal lat of first mark in adjacent pair of marks 
+        lon1 = x['longdb4']    # decimal long of first mark in adjacent pair of marks
+        lat2 = x['latd']       # decimal lat of second mark in adjacent pair of marks
+        lon2 = x['longd']      # decimal long of second mark in adjacent pair of marks
+    #   radius = 6371          # km
+        radius = 6371 / 1.852  # km to nautical miles
+        dlat = math.radians(lat2-lat1)
+        dlon = math.radians(lon2-lon1)
+        a = math.sin(dlat/2) * math.sin(dlat/2) + math.cos(math.radians(lat1)) \
+          * math.cos(math.radians(lat2)) * math.sin(dlon/2) * math.sin(dlon/2)
+        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
+        d = radius * c
+        return d
+    
+    # Strip out P's and S's from marks
+    c = ridPS(thiscourse)
+    c = c.split('-')
+
+    # Let the mark number ('no') column be the index. Pull latd and longd out of marks dataframe
+    m = marks.set_index('no').ix[c,['latd','longd']]
+    #print '1.', m
+
+    # Put previous mark's lat/long on current mark's row of dataframe. Use the shift method
+    m['latdb4']  = m.latd.shift(1)
+    m['longdb4'] = m.longd.shift(1)
+    #print '2.', m
+
+    # Apply the dist function along each row to get distance between adjacent marks of course
+    m['distance'] = m.apply(dist,axis=1)
+    #print '3.', m
+
+    # Replace NaN with zero and sum distance of all legs in course
+    return m.fillna(0).distance.sum()
