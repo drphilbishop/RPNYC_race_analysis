@@ -785,35 +785,35 @@ Date,Handicap,Series,Race,Div,Boat name,resetTCF,TCFalgo,Scoring,Start,Finish,El
 22/02/2015,PNR,PNR,r8,B,Testarossa,0,2,1,1435,151140,0:36:40,2200,16,0.767,0.772,
 22/02/2015,PNR,PNR,r8,B,Prime Mover,0,2,1,1435,151320,0:38:20,2300,17,0.735,0.762,0.964
 22/02/2015,PNR,PNR,r8,B,CU,0,2,1,1435,,<dnc>,,,,,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Blink,1,2,1,1145,124149,0:56:49,3409,2,0.978,0.96,1.362
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Satellite Spy,1,2,1,1145,124801,1:03:01,3781,3,0.883,0.885,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Wedgetail,1,2,1,1145,124416,0:59:16,3556,4,0.942,0.945,1.209
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,The Guarantee,1,2,1,1145,125210,1:07:10,4030,5,0.836,0.84,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Black Diamond,1,2,1,1145,125553,1:10:53,4253,7,0.81,0.807,1.006
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Magic Trick,1,2,1,1145,125026,1:05:26,3926,8,0.889,0.875,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Crusader,1,2,1,1145,124555,1:00:55,3655,10,0.973,0.951,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Revs,1,2,1,1145,124924,1:04:24,3864,6,0.888,0.9,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Helter Skelter,1,2,1,1145,125350,1:08:50,4130,9,0.857,0.855,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Jive Talkin,1,2,1,1145,125355,1:08:55,4135,11,0.87,0.857,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,St Laurence,1,2,1,1145,123842,0:53:42,3222,1,1.004,,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Airship,1,2,1,1005,111354,1:08:54,4134,7,0.785,0.753,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Gucci,1,2,1,1005,111505,1:10:05,4205,5,0.755,0.745,0.963
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Stepping Stone,1,2,1,1005,111631,1:11:31,4291,6,0.753,0.755,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,After Midnight,1,2,1,1005,111934,1:14:34,4474,13,0.745,0.725,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Flying Machine,1,2,1,1005,111617,1:11:17,4277,4,0.74,0.762,0.941
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Whistler III,1,2,1,1005,111924,1:14:24,4464,9,0.732,0.737,0.95
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Prime Mover,1,2,1,1005,111713,1:12:13,4333,11,0.764,0.762,0.964
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Haumuri,1,2,1,1005,112915,1:24:15,5055,2,0.617,0.662,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Testarossa,1,2,1,1005,111716,1:12:16,4336,10,0.757,0.772,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Titus Canby,1,2,1,1005,112613,1:21:13,4873,16,0.706,0.69,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Wiseguy,1,2,1,1005,112241,1:17:41,4661,8,0.699,0.725,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Illusions,1,2,1,1005,112920,1:24:20,5060,15,0.663,0.675,0.918
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Tracer,1,2,1,1005,114147,1:36:47,5807,3,0.54,0.595,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,White Cavalier,1,2,1,1005,113413,1:29:13,5353,1,0.549,0.65,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,CU,1,2,1,1005,112211,1:17:11,4631,14,0.723,0.76,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Brix,1,2,1,1005,112608,1:21:08,4868,12,0.682,0.725,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Synfinity,1,2,1,1005,112654,1:21:54,4914,18,0.72,0.72,
-20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Incantare,1,2,1,1005,112833,1:23:33,5013,17,0.688,0.725,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Blink,0,2,1,1145,124149,0:56:49,3409,2,0.978,0.96,1.362
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Satellite Spy,0,2,1,1145,124801,1:03:01,3781,3,0.883,0.885,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Wedgetail,0,2,1,1145,124416,0:59:16,3556,4,0.942,0.945,1.209
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,The Guarantee,0,2,1,1145,125210,1:07:10,4030,5,0.836,0.84,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Black Diamond,0,2,1,1145,125553,1:10:53,4253,7,0.81,0.807,1.006
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Magic Trick,0,2,1,1145,125026,1:05:26,3926,8,0.889,0.875,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Crusader,0,2,1,1145,124555,1:00:55,3655,10,0.973,0.951,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Revs,0,2,1,1145,124924,1:04:24,3864,6,0.888,0.9,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Helter Skelter,0,2,1,1145,125350,1:08:50,4130,9,0.857,0.855,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,Jive Talkin,0,2,1,1145,125355,1:08:55,4135,11,0.87,0.857,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,A,St Laurence,0,2,1,1145,123842,0:53:42,3222,1,1.004,,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Airship,0,2,1,1005,111354,1:08:54,4134,7,0.785,0.753,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Gucci,0,2,1,1005,111505,1:10:05,4205,5,0.755,0.745,0.963
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Stepping Stone,0,2,1,1005,111631,1:11:31,4291,6,0.753,0.755,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,After Midnight,0,2,1,1005,111934,1:14:34,4474,13,0.745,0.725,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Flying Machine,0,2,1,1005,111617,1:11:17,4277,4,0.74,0.762,0.941
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Whistler III,0,2,1,1005,111924,1:14:24,4464,9,0.732,0.737,0.95
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Prime Mover,0,2,1,1005,111713,1:12:13,4333,11,0.764,0.762,0.964
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Haumuri,0,2,1,1005,112915,1:24:15,5055,2,0.617,0.662,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Testarossa,0,2,1,1005,111716,1:12:16,4336,10,0.757,0.772,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Titus Canby,0,2,1,1005,112613,1:21:13,4873,16,0.706,0.69,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Wiseguy,0,2,1,1005,112241,1:17:41,4661,8,0.699,0.725,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Illusions,0,2,1,1005,112920,1:24:20,5060,15,0.663,0.675,0.918
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Tracer,0,2,1,1005,114147,1:36:47,5807,3,0.54,0.595,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,White Cavalier,0,2,1,1005,113413,1:29:13,5353,1,0.549,0.65,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,CU,0,2,1,1005,112211,1:17:11,4631,14,0.723,0.76,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Brix,0,2,1,1005,112608,1:21:08,4868,12,0.682,0.725,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Synfinity,0,2,1,1005,112654,1:21:54,4914,18,0.72,0.72,
+20/02/2015,PNR_asPublished,PNR_asPublished,r1,B,Incantare,0,2,1,1005,112833,1:23:33,5013,17,0.688,0.725,
 20/02/2015,PNR_asPublished,PNR_asPublished,r2,A,Satellite Spy,0,2,1,1310,141445,1:04:45,3885,1,0.885,0.885,
 20/02/2015,PNR_asPublished,PNR_asPublished,r2,A,Wedgetail,0,2,1,1310,141103,1:01:03,3663,2,0.944,0.945,1.209
 20/02/2015,PNR_asPublished,PNR_asPublished,r2,A,The Guarantee,0,2,1,1310,141916,1:09:16,4156,3,0.837,0.84,
@@ -1116,7 +1116,18 @@ Date,Handicap,Series,Race,Div,Boat name,resetTCF,TCFalgo,Scoring,Start,Finish,El
 14/03/2015,Fleet,At Home,r4,Combined,Marishka,0,2,1,1315,153832,2:23:32,8612,7,0.608,0.65,
 14/03/2015,Fleet,At Home,r4,Combined,Floating Free,0,2,1,1315,152239,2:07:39,7659,8,0.713,,
 14/03/2015,Fleet,At Home,r4,Combined,Port Nic 2,0,2,1,1315,153514,2:20:14,8414,9,0.68,,
-21/03/2015,Championship,Autumn,r1,1,Blink,0,2,1,1315,134214,0:27:14,1634,2,0.978,0.96,1.362
+20/03/2015,Rum,Rum,r12,Combined,Eat My Shorts,0,2,1,1830,195133,1:21:33,4893,1,0.738,,
+20/03/2015,Rum,Rum,r12,Combined,XTSea,0,2,1,1830,195206,1:22:06,4926,2,0.772,,
+20/03/2015,Rum,Rum,r12,Combined,Port Nic 2,0,2,1,1830,200457,1:34:57,5697,3,0.674,,
+20/03/2015,Rum,Rum,r12,Combined,CU,0,2,1,1830,195510,1:25:10,5110,4,0.777,,
+20/03/2015,Rum,Rum,r12,Combined,After Midnight,0,2,1,1830,200708,1:37:08,5828,5,0.706,,
+20/03/2015,Rum,Rum,r12,Combined,Illusions,0,2,1,1830,202011,1:50:11,6611,6,0.682,,
+20/03/2015,Rum,Rum,r12,Combined,Ibis,0,2,1,1830,202442,1:54:42,6882,7,0.664,,
+20/03/2015,Rum,Rum,r12,Combined,Tortimony,0,2,1,1830,,<dnf>,,,,,
+20/03/2015,Rum,Rum,r12,Combined,Rosschild,0,2,1,1830,,<dnf>,,,,,
+20/03/2015,Rum,Rum,r12,Combined,Charlie,0,2,1,1830,,<dsq>,,,,,
+20/03/2015,Rum,Rum,r12,Combined,Port Nic 1,0,2,1,1830,,<dnf>,,,,,
+21/03/2015,Championship,Autumn,r1,1,Blink,1,2,1,1315,134214,0:27:14,1634,2,0.978,0.96,1.362
 21/03/2015,Championship,Autumn,r1,1,Wedgetail,0,2,1,1315,134216,0:27:16,1636,1,0.95,0.945,1.209
 21/03/2015,Championship,Autumn,r1,1,Revs,0,2,1,1315,134516,0:30:16,1816,3,0.888,0.9,
 21/03/2015,Championship,Autumn,r1,1,Helter Skelter,0,2,1,1315,135241,0:37:41,2261,4,0.86,0.855,
@@ -1140,7 +1151,38 @@ Date,Handicap,Series,Race,Div,Boat name,resetTCF,TCFalgo,Scoring,Start,Finish,El
 21/03/2015,Championship,Autumn,r2,2,Stepping Stone,0,2,1,1405,160154,1:56:54,7014,3,0.753,0.755,
 21/03/2015,Championship,Autumn,r2,2,After Midnight,0,2,1,1405,160717,2:02:17,7337,6,0.743,0.725,
 21/03/2015,Championship,Autumn,r2,2,Incantare,0,2,1,1405,161308,2:08:08,7688,2,0.682,0.725,0.953
-25/3/2015,Fleet,Twilight 2,r3,Combined,CU,0,2,1,1830,194934,1:19:34,4774,4,0.749,0.76,
-25/3/2015,Fleet,Twilight 2,r3,Combined,After Midnight,0,2,1,1830,195056,1:20:56,4856,3,0.722,0.725,
-25/3/2015,Fleet,Twilight 2,r3,Combined,Wiseguy,0,2,1,1830,195456,1:24:56,5096,2,0.679,0.725,
-25/3/2015,Fleet,Twilight 2,r3,Combined,White Cavalier,0,2,1,1830,201009,1:40:09,6009,1,0.569,0.65,
+25/03/2015,Fleet,Twilight 2,r3,Combined,CU,0,2,1,1830,194934,1:19:34,4774,4,0.749,0.76,
+25/03/2015,Fleet,Twilight 2,r3,Combined,After Midnight,0,2,1,1830,195056,1:20:56,4856,3,0.722,0.725,
+25/03/2015,Fleet,Twilight 2,r3,Combined,Wiseguy,0,2,1,1830,195456,1:24:56,5096,2,0.679,0.725,
+25/03/2015,Fleet,Twilight 2,r3,Combined,White Cavalier,0,2,1,1830,201009,1:40:09,6009,1,0.569,0.65,
+27/03/2015,Rum,Rum,r13,Combined,After Midnight,0,2,1,1830,192305,0:53:05,3185,1,0.7,,
+27/03/2015,Rum,Rum,r13,Combined,Blink,0,2,1,1830,190939,0:39:39,2379,2,0.938,,
+27/03/2015,Rum,Rum,r13,Combined,Port Nic 2,0,2,1,1830,192518,0:55:18,3318,3,0.679,,
+27/03/2015,Rum,Rum,r13,Combined,Port Nic 1,0,2,1,1830,192905,0:59:05,3545,4,0.672,,
+27/03/2015,Rum,Rum,r13,Combined,Ibis,0,2,1,1830,193117,1:01:17,3677,5,0.658,,
+27/03/2015,Rum,Rum,r13,Combined,Brix,0,2,1,1830,192924,0:59:24,3564,6,0.705,,
+27/03/2015,Rum,Rum,r13,Combined,Montego Bay III,0,2,1,1830,192828,0:58:28,3508,7,0.721,,
+27/03/2015,Rum,Rum,r13,Combined,Charlie,0,2,1,1830,194655,1:16:55,4615,8,0.602,,
+27/03/2015,Rum,Rum,r13,Combined,Tortimony,0,2,1,1830,194923,1:19:23,4763,9,0.6,,
+27/03/2015,Rum,Rum,r13,Combined,White Cavalier,0,2,1,1830,195246,1:22:46,4966,10,0.584,,
+27/03/2015,Rum,Rum,r13,Combined,Rosschild,0,2,1,1830,201015,1:40:15,6015,11,0.632,,
+27/03/2015,Rum,Rum,r13,Combined,Vandetta,0,2,1,1830,,<no entry>,,,,,
+28/3/2015,Championship,Autumn,r3,1,Helter Skelter,0,2,1,1315,154926,2:34:26,9266,1,0.842,0.855,
+28/3/2015,Championship,Autumn,r3,1,Revs,0,2,1,1315,160016,2:45:16,9916,2,0.887,0.9,
+28/3/2015,Championship,Autumn,r3,1,Blink,0,2,1,1315,154746,2:32:46,9166,3,0.969,0.96,1.362
+28/3/2015,Championship,Autumn,r3,1,Wedgetail,0,2,1,1315,155200,2:37:00,9420,4,0.954,0.945,1.209
+28/3/2015,Championship,Autumn,r3,2,CU,0,2,1,1320,153715,2:17:15,8235,1,0.722,0.76,
+28/3/2015,Championship,Autumn,r3,2,Incantare,0,2,1,1320,155456,2:34:56,9296,2,0.682,0.725,0.953
+28/3/2015,Championship,Autumn,r3,2,Wiseguy,0,2,1,1320,155130,2:31:30,9090,3,0.699,0.725,
+28/3/2015,Championship,Autumn,r3,2,After Midnight,0,2,1,1320,154641,2:26:41,8801,4,0.736,0.725,
+28/3/2015,Championship,Autumn,r3,2,Testarossa,0,2,1,1320,153939,2:19:39,8379,5,0.774,0.772,
+28/3/2015,Championship,Autumn,r3,2,Whistler III,0,2,1,1320,154842,2:28:42,8922,6,0.732,0.737,0.95
+28/3/2015,Championship,Autumn,r3,2,Airship,0,2,1,1320,154442,2:24:42,8682,7,0.769,0.753,1.031
+28/3/2015,Championship,Autumn,r3,2,Port Nic 2,0,2,1,1320,160827,2:48:27,10107,8,0.674,,
+28/3/2015,Championship,Autumn,r3,2,Prime Mover,0,2,1,1320,155114,2:31:14,9074,9,0.763,0.762,0.964
+28/3/2015,Championship,Autumn,r3,2,Stepping Stone,0,2,1,1320,155315,2:33:15,9195,10,0.754,0.755,
+28/3/2015,Championship,Autumn,r3,3,Haumuri,0,2,1,1325,151941,1:54:41,6881,1,0.622,0.665,
+28/3/2015,Championship,Autumn,r3,3,Revenue Cutter,0,2,1,1325,152256,1:57:56,7076,2,0.637,,
+28/3/2015,Championship,Autumn,r3,3,Illusions,0,2,1,1325,151916,1:54:16,6856,3,0.663,0.675,0.918
+28/3/2015,Championship,Autumn,r3,3,Marishka,0,2,1,1325,153201,2:07:01,7621,4,0.6,0.65,
+28/3/2015,Championship,Autumn,r3,3,Titus Canby,0,2,1,1325,152138,1:56:38,6998,5,0.702,0.69,

@@ -1,0 +1,198 @@
+,Date,Handicap,Boat name,newTCF,PHRF,IRC
+0,14 Mar,Central Triangle,Blink,1.014,1.022,1.3619999999999999
+1,14 Mar,Central Triangle,Crusader,1.014,1.022,1.371
+2,14 Mar,Central Triangle,Gucci,0.748,0.758,0.963
+3,14 Mar,Central Triangle,Jive Talkin,0.86,0.87,
+4,14 Mar,Central Triangle,Montego Bay III,0.741,0.7609999999999999,
+5,14 Mar,Central Triangle,Revs,0.863,0.895,
+6,14 Mar,Central Triangle,Satellite Spy,0.887,0.892,
+7,28 Mar,Championship,After Midnight,0.734,0.725,
+8,28 Mar,Championship,Airship,0.76,0.753,1.031
+9,11 Oct,Championship,Badonkadonk,0.837,0.865,
+10,28 Mar,Championship,Blink,0.964,0.96,1.3619999999999999
+11,28 Feb,Championship,Blurred Image,0.681,,
+12,28 Feb,Championship,Brix,0.687,0.725,
+13,28 Mar,Championship,CU,0.727,0.76,
+14,28 Feb,Championship,Charlie,0.581,,
+15,28 Feb,Championship,Eat My Shorts,0.741,0.74,
+16,28 Feb,Championship,Floating Free,0.721,,
+17,28 Feb,Championship,Gucci,0.754,0.745,0.963
+18,28 Mar,Championship,Haumuri,0.628,0.665,
+19,28 Mar,Championship,Helter Skelter,0.858,0.855,
+20,28 Mar,Championship,Illusions,0.662,0.675,0.9179999999999999
+21,28 Mar,Championship,Incantare,0.688,0.725,0.953
+22,8 Nov,Championship,La Quintessence,0.701,,
+23,31 Jan,Championship,Magic Trick,0.89,0.875,
+24,21 Mar,Championship,Marangi,0.608,0.675,
+25,11 Oct,Championship,Maranui,0.544,,
+26,28 Mar,Championship,Marishka,0.599,0.65,
+27,28 Feb,Championship,Montego Bay III,0.746,0.745,
+28,4 Oct,Championship,Port Nic 1,0.674,,
+29,28 Mar,Championship,Port Nic 2,0.667,,
+30,28 Mar,Championship,Prime Mover,0.755,0.762,0.9640000000000001
+31,28 Mar,Championship,Revenue Cutter,0.638,,
+32,28 Mar,Championship,Revs,0.882,0.9,
+33,31 Jan,Championship,Rosschild,0.639,0.68,
+34,8 Nov,Championship,Saffron,0.679,,
+35,18 Oct,Championship,Saucy Sausage,0.634,0.635,
+36,28 Feb,Championship,St Laurence,1.05,,
+37,28 Mar,Championship,Stepping Stone,0.746,0.755,
+38,8 Nov,Championship,Structural Analysis,0.771,,
+39,28 Mar,Championship,Testarossa,0.777,0.772,
+40,31 Jan,Championship,The Guarantee,0.838,0.84,
+41,28 Mar,Championship,Titus Canby,0.696,0.69,
+42,28 Feb,Championship,Tortimony,0.619,,
+43,29 Nov,Championship,Wai Aniwa,0.678,0.69,
+44,28 Mar,Championship,Wedgetail,0.951,0.945,1.209
+45,28 Mar,Championship,Whistler III,0.73,0.737,0.95
+46,28 Feb,Championship,White Cavalier,0.551,0.65,
+47,28 Mar,Championship,Wiseguy,0.702,0.725,
+48,8 Nov,Classics,Galatea,0.504,,
+49,14 Mar,Classics,Lizzie,0.419,,
+50,7 Feb,Classics,Mabel,0.415,,
+51,14 Mar,Classics,Shemara,0.4,,
+52,25 Mar,Fleet,After Midnight,0.719,0.725,
+53,28 Feb,Fleet,Airship,0.743,0.753,1.031
+54,13 Dec,Fleet,Blink,0.98,1.0,
+55,28 Feb,Fleet,Blurred Image,0.698,,
+56,28 Feb,Fleet,Brix,0.69,0.725,
+57,25 Mar,Fleet,CU,0.741,0.76,
+58,28 Feb,Fleet,Charlie,0.595,,
+59,13 Dec,Fleet,Crusader,0.981,1.045,
+60,24 Jan,Fleet,Drinks Trolley,0.823,0.84,
+61,28 Feb,Fleet,Eat My Shorts,0.728,0.74,
+62,13 Dec,Fleet,Excel,0.715,,
+63,14 Mar,Fleet,Floating Free,0.707,,
+64,13 Dec,Fleet,Flying Fox,0.769,,
+65,28 Feb,Fleet,Gucci,0.742,0.745,0.963
+66,28 Feb,Fleet,Haumuri,0.648,0.665,
+67,28 Feb,Fleet,Helter Skelter,0.839,0.855,
+68,24 Jan,Fleet,Illusions,0.655,0.675,0.9179999999999999
+69,24 Jan,Fleet,Incantare,0.703,0.725,
+70,8 Nov,Fleet,La Quintessence,0.697,,
+71,24 Jan,Fleet,Magic Trick,0.889,0.875,
+72,14 Mar,Fleet,Marangi,0.625,,
+73,14 Mar,Fleet,Marishka,0.605,0.65,
+74,28 Feb,Fleet,Montego Bay III,0.713,0.745,
+75,14 Mar,Fleet,Port Nic 2,0.674,,
+76,14 Mar,Fleet,Prime Mover,0.737,0.762,0.9640000000000001
+77,14 Mar,Fleet,Revenue Cutter,0.645,,
+78,28 Feb,Fleet,Revs,0.895,0.9,
+79,20 Sep,Fleet,Rosschild,0.616,0.68,
+80,8 Nov,Fleet,Saffron,0.676,,
+81,1 Nov,Fleet,Saucy Sausage,0.623,0.635,
+82,28 Feb,Fleet,St Laurence,1.027,,
+83,14 Feb,Fleet,Stepping Stone,0.74,0.755,
+84,8 Nov,Fleet,Structural Analysis,0.758,,
+85,28 Feb,Fleet,Testarossa,0.799,0.772,
+86,24 Jan,Fleet,The Guarantee,0.845,0.84,
+87,28 Feb,Fleet,Titus Canby,0.664,0.69,
+88,28 Feb,Fleet,Tortimony,0.608,,
+89,8 Nov,Fleet,Wai Aniwa,0.659,0.69,
+90,28 Feb,Fleet,Wedgetail,0.954,0.945,1.209
+91,14 Mar,Fleet,Whistler III,0.731,0.737,0.95
+92,25 Mar,Fleet,White Cavalier,0.574,0.65,
+93,25 Mar,Fleet,Wiseguy,0.679,0.725,
+94,13 Dec,Fleet,Young Nicholson,0.804,,
+95,6 Mar,Offshore,Blink,1.006,1.022,1.3619999999999999
+96,6 Mar,Offshore,Crusader,1.008,1.022,1.371
+97,6 Mar,Offshore,Gucci,0.752,0.758,0.963
+98,1 Nov,Offshore,Illusions,0.667,0.665,
+99,6 Mar,Offshore,Jive Talkin,0.86,0.87,
+100,6 Mar,Offshore,Montego Bay III,0.742,0.7609999999999999,
+101,1 Nov,Offshore,Prime Mover,0.775,0.765,0.9640000000000001
+102,6 Mar,Offshore,Revs,0.868,0.895,
+103,6 Mar,Offshore,Satellite Spy,0.901,0.892,
+104,1 Nov,Offshore,Wai Aniwa,0.686,0.7,
+105,6 Feb,Offshore,Wedgetail,0.943,0.96,1.209
+106,22 Feb,PNR,After Midnight,0.721,0.725,
+107,22 Feb,PNR,Airship,0.782,0.753,
+108,22 Feb,PNR,Black Diamond,0.818,0.807,1.006
+109,22 Feb,PNR,Blink,0.967,0.96,1.3619999999999999
+110,22 Feb,PNR,Brix,0.682,0.725,
+111,21 Feb,PNR,CU,0.709,0.76,
+112,20 Feb,PNR,Crusader,0.947,0.951,
+113,22 Feb,PNR,Flying Machine,0.761,0.762,0.941
+114,22 Feb,PNR,Gucci,0.755,0.745,0.963
+115,22 Feb,PNR,Haumuri,0.613,0.662,
+116,22 Feb,PNR,Helter Skelter,0.846,0.855,
+117,22 Feb,PNR,Illusions,0.648,0.675,0.9179999999999999
+118,22 Feb,PNR,Incantare,0.688,0.725,
+119,22 Feb,PNR,Jive Talkin,0.85,0.857,
+120,22 Feb,PNR,Magic Trick,0.859,0.875,
+121,22 Feb,PNR,Prime Mover,0.726,0.762,0.9640000000000001
+122,22 Feb,PNR,Revs,0.901,0.9,
+123,22 Feb,PNR,Satellite Spy,0.904,0.885,
+124,22 Feb,PNR,St Laurence,1.016,,
+125,22 Feb,PNR,Stepping Stone,0.741,0.755,
+126,22 Feb,PNR,Synfinity,0.681,0.72,
+127,22 Feb,PNR,Testarossa,0.759,0.772,
+128,22 Feb,PNR,The Guarantee,0.838,0.84,
+129,22 Feb,PNR,Titus Canby,0.682,0.69,
+130,22 Feb,PNR,Tracer,0.56,0.595,
+131,22 Feb,PNR,Wedgetail,0.954,0.945,5.0
+132,22 Feb,PNR,Whistler III,0.725,0.737,0.95
+133,22 Feb,PNR,White Cavalier,0.588,0.65,
+134,22 Feb,PNR,Wiseguy,0.692,0.725,
+135,22 Feb,PNR_asPublished,After Midnight,0.721,0.725,
+136,22 Feb,PNR_asPublished,Airship,0.782,0.753,
+137,22 Feb,PNR_asPublished,Black Diamond,0.818,0.807,1.006
+138,22 Feb,PNR_asPublished,Blink,0.967,0.96,1.3619999999999999
+139,22 Feb,PNR_asPublished,Brix,0.682,0.725,
+140,21 Feb,PNR_asPublished,CU,0.709,0.76,
+141,20 Feb,PNR_asPublished,Crusader,0.947,0.951,
+142,22 Feb,PNR_asPublished,Flying Machine,0.761,0.762,0.941
+143,22 Feb,PNR_asPublished,Gucci,0.755,0.745,0.963
+144,22 Feb,PNR_asPublished,Haumuri,0.613,0.662,
+145,22 Feb,PNR_asPublished,Helter Skelter,0.846,0.855,
+146,22 Feb,PNR_asPublished,Illusions,0.648,0.675,0.9179999999999999
+147,22 Feb,PNR_asPublished,Incantare,0.688,0.725,
+148,22 Feb,PNR_asPublished,Jive Talkin,0.85,0.857,
+149,22 Feb,PNR_asPublished,Magic Trick,0.859,0.875,
+150,22 Feb,PNR_asPublished,Prime Mover,0.726,0.762,0.9640000000000001
+151,22 Feb,PNR_asPublished,Revs,0.901,0.9,
+152,22 Feb,PNR_asPublished,Satellite Spy,0.904,0.885,
+153,22 Feb,PNR_asPublished,St Laurence,1.016,,
+154,22 Feb,PNR_asPublished,Stepping Stone,0.741,0.755,
+155,22 Feb,PNR_asPublished,Synfinity,0.681,0.72,
+156,22 Feb,PNR_asPublished,Testarossa,0.759,0.772,
+157,22 Feb,PNR_asPublished,The Guarantee,0.838,0.84,
+158,22 Feb,PNR_asPublished,Titus Canby,0.682,0.69,
+159,22 Feb,PNR_asPublished,Tracer,0.56,0.595,
+160,22 Feb,PNR_asPublished,Wedgetail,0.954,0.945,5.0
+161,22 Feb,PNR_asPublished,Whistler III,0.725,0.737,0.95
+162,22 Feb,PNR_asPublished,White Cavalier,0.588,0.65,
+163,22 Feb,PNR_asPublished,Wiseguy,0.692,0.725,
+164,27 Mar,Rum,After Midnight,0.705,,
+165,27 Mar,Rum,Blink,0.941,,
+166,27 Mar,Rum,Brix,0.705,,
+167,20 Mar,Rum,CU,0.777,,
+168,27 Mar,Rum,Charlie,0.595,,
+169,20 Mar,Rum,Eat My Shorts,0.749,,
+170,14 Nov,Rum,Gucci,0.742,,
+171,14 Nov,Rum,Haumuri,0.656,,
+172,27 Mar,Rum,Ibis,0.67,,
+173,20 Mar,Rum,Illusions,0.676,,
+174,31 Oct,Rum,Incantare,0.699,,
+175,27 Mar,Rum,Montego Bay III,0.719,,
+176,27 Mar,Rum,Port Nic 1,0.677,,
+177,27 Mar,Rum,Port Nic 2,0.687,,
+178,27 Mar,Rum,Rosschild,0.625,,
+179,7 Nov,Rum,Saffron,0.689,,
+180,16 Jan,Rum,Tarun,0.579,,
+181,27 Mar,Rum,Tortimony,0.6,,
+182,30 Jan,Rum,Tracer,0.575,,
+183,7 Nov,Rum,Wai Aniwa,0.653,,
+184,5 Dec,Rum,Whistler III,0.747,,
+185,27 Mar,Rum,White Cavalier,0.586,,
+186,30 Jan,Rum,Wiseguy,0.703,,
+187,20 Mar,Rum,XTSea,0.78,,
+188,24 Jan,Two-handed,After Midnight,0.727,0.715,
+189,24 Jan,Two-handed,Blink,0.964,1.01,
+190,25 Oct,Two-handed,Floating Free,0.716,,
+191,25 Oct,Two-handed,Montego Bay III,0.727,,
+192,25 Oct,Two-handed,Nedax Racing,0.832,,
+193,25 Oct,Two-handed,Saucy Sausage,0.632,0.645,
+194,24 Jan,Two-handed,Titus Canby,0.684,0.69,
+195,25 Oct,Two-handed,Wai Aniwa,0.685,0.69,
+196,24 Jan,Two-handed,White Cavalier,0.579,0.65,
