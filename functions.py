@@ -58,7 +58,7 @@ def TCFactual(df,indexKey=None,newTCFvalue=None):
         if df['resetTCF'] == 1:
             return df['TCFapplied']
         else:    	  
-            key = (df['Boat name'],indexKey)  # Get the boat-handicap key
+            key = (df['Boat name'],indexKey,df.name[4])  # Get the boat-handicap key
             if math.isnan(df['TCFapplied']) == False and '<' not in df['Elapsed time']:
                 if not newTCFvalue[key]:                                    # If newTCFvalue[key] is empty, boat hasn't yet had a race for this handicap.
                     newTCFvalue[key].append(df['TCFapplied'])               # Append TCFapplied (as best candidate for TCFactual) to newTCFvalue[key]
@@ -174,7 +174,7 @@ def TCFclmp(x, loClamp = .03, upClamp = .03):
 
 # Function to update TCF clamp history and seed data for all boats in a race
 def checkNewScoringAlgorithms(df, currentAlgo=None, indexKey=None, race=None):          
-    key = (df['Boat name'],indexKey)   
+    key = (df['Boat name'],indexKey,df.name[4])   
     #print key        
     TCFalgo = int(df['TCFalgo'])               # Get value from TCFalgo      
     if not currentAlgo[key]:
@@ -189,7 +189,7 @@ def checkNewScoringAlgorithms(df, currentAlgo=None, indexKey=None, race=None):
 
 # Function to update TCF clamp history and seed data for all boats in a race
 def updateTCFclampAndSeed(df,numSeeds=2,numFinished=4,pctFinished=0.5,race=None,indexKey=None,TCFclampHistoryAndSeeds=None):        
-    key = (df['Boat name'],indexKey)               # Construct a key from boat name           
+    key = (df['Boat name'],indexKey,df.name[4])               # Construct a key from boat name           
     # If tcfClampHistoryAndSeeds[key] is empty (meaning hasnt raced before), add seeds. 
     percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
     #print '% finished: '+str(percentFinished)
@@ -222,7 +222,7 @@ def newTCF(df,numFinished=4,pctFinished=0.5,numPastPerfs=4,race=None,indexKey=No
     #numFinished is the minimum number of finishers required to finish a race
     #pctFinished is the percentage of boats in a fleet required to finish a race
     #numPastPerfs is the total number of values used in the newTCF calculation. Includes this races actualTCF and TCFclamp history of last 4 races, using seeds if less than 4 previous races exist
-    key = (df['Boat name'],indexKey)                      # Construct a key from boat name and handicap type
+    key = (df['Boat name'],indexKey,df.name[4])           # Construct a key from boat name and handicap type
     values=TCFclampHistoryAndSeeds[key]                   # Get list of seeds and previous TFCclamp values
     percentFinished =  len(race.dropna(subset=['ETsecs']))/len(race)
     #print '  TCF algo: '+str(df['TCFalgo'])    
